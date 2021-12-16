@@ -55,13 +55,6 @@ sort file.name asc
 		SORT file.day desc
 		```
 
-# Alignment review
-- [ ] Review [[Pillars 🔺 - Foundational Areas]] 
-- [ ] Review [[Habits & Routines 🧬]] 
-- [ ] Review fitness plan - **View Workout Tracking Database**
-- [ ] Review & Refine [[Mindset MOC]] page
-- [ ] View Daily Tracking
-
 # Projects and Goals Review
 ### PROJECTS: **Review & Update**
 - [ ] Prioritize Projects - determine "Active" Projects for the upcoming month
