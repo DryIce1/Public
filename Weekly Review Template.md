@@ -1,5 +1,5 @@
 ---
-banner: _System/attachments/Bing - Forest Image Scotland.png
+banner: https://wallpaperbat.com/down/192551-super-ultra-wide-wallpaper-hdrshooter
 banner_x: 0.5
 banner_y: 0.405
 ---
