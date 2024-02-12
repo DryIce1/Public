@@ -1,0 +1,15 @@
+
+.metadata-property{
+  display: none !important
+}
+.metadata-property:is(
+  [data-property-key="up"],
+  [data-property-key="related"]
+  ) {
+      display: inherit !important;
+      border-bottom: unset;
+  }
+
+  .metadata-add-button {
+    display: none;
+  }
