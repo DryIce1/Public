@@ -1,5 +1,5 @@
 
-/* MANUAL DISPLAY/HIDE CUSTOM PROPERTIES */
+/* MANUAL DISPLAY PERMITTED CUSTOM PROPERTIES */
 
 .metadata-property{
     display: none;
@@ -28,10 +28,22 @@
     ) {
         display: inherit;
     }
-
-    
     
     /* Styling of Properties : Thanks to PRISM THEME for the tips */
+    .metadata-property:is(
+      [data-property-key="up"],
+      [data-property-key="related"] 
+      ) {
+        border-radius: unset;
+        background-color: var(--accent-1, var(--color-base-30));
+      }
+
+    .metadata-property:is(
+      [data-property-key="related"]
+      ){
+        border-bottom: solid;
+        border-bottom-color: var(--color-accent);
+      }
 
     .metadata-property:is(
       [data-property-key="up"],
@@ -48,21 +60,15 @@
           font-weight: var(--bold-weight);
           font-size: var(--font-ui-large);
         }
-        .metadata-property:is(
-          [data-property-key="up"],
-          [data-property-key="related"] 
-          ) {
-            border-radius: unset;
-            background-color: var(--accent-08, var(--color-base-30));
-          }
 
-        .metadata-property:is(
-          [data-property-key="related"]
-          ){
-            border-bottom: solid;
-            border-bottom-color: var(--color-accent);
-          }
-            
+        .metadata-property:not(
+        [data-property-key="up"],
+        [data-property-key="related"] 
+        ) .metadata-property-value{
+          font-style: unset;
+        }
+
+      
 .metadata-properties-heading {
   display: inline-flex;
   width: 100%;
@@ -84,6 +90,7 @@
   width: 100%;
 }
 
+
 .metadata-properties-title {
   display: flex;
   color: var(--color-accent);
@@ -103,12 +110,17 @@
   border-top-right-radius: 0px;
 }
 
+/* .callout.callout:is([data-callout=link]) {
+  float: right;
+  margin: unset;
+} */
 
-.metadata-container .metadata-add-button {
+ .metadata-add-button {
   margin: var(--size-2-3);
   border: var(--color-accent);
   border-style: solid;
   margin-left: auto;
+  border-radius: var(--radius-m);
   
   }
 
@@ -162,5 +174,6 @@ padding: var(--size-4-1);
  
 body{
 --metadata-gap: 0px;
-}
+--accent-1: hsla(var(--interactive-accent-hsl), 0.15);
 
+}
