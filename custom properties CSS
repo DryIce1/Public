@@ -48,6 +48,7 @@
             [data-property-key="up"],
             [data-property-key="related"] 
             ) {
+              border-radius: unset;
               background-color: var(--accent-08, var(--color-base-30));
             }
 
@@ -59,11 +60,8 @@
             }
 
 
-.metadata-property{
-  border-radius: unset;
-}
 /* Styling of Properties : CREDIT TO PRISM THEME */
-
+            
 .metadata-properties-heading {
   display: inline-flex;
   width: 100%;
@@ -73,9 +71,14 @@
   border: solid;
   border-color: var(--color-accent);
   border-bottom: unset;
+  border-top-left-radius: var(--radius-l);
+  border-top-right-radius: var(--radius-l);
 }
+
 .metadata-properties-heading.is-collapsed {
   border-bottom: solid;
+  border-bottom-left-radius: var(--radius-l);
+  border-bottom-right-radius: var(--radius-l);
   border-color: var(--color-accent);
   width: 100%;
 }
@@ -90,11 +93,23 @@
   font-size: var(--font-ui-large)
 }
 
-.cm-editor .metadata-content, .markdown-preview-view .metadata-content {
+.metadata-content {
   border-color: var(--color-accent);
   border-style: solid;
   border-top: unset;
+  border-radius: var(--radius-l);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
+
+
+.metadata-container .metadata-add-button {
+  margin: var(--size-2-3);
+  border: var(--color-accent);
+  border-style: solid;
+  margin-left: auto;
+  
+  }
 
 .metadata-properties-heading .collapse-indicator {
   position: relative;
@@ -126,10 +141,6 @@ height: fit-content;
 padding: var(--size-2-1);
 margin-left: var(--size-4-1);
 }
-.metadata-property-icon:hover {
-background-color: var(--interactive-accent-base);
-/* border-radius: var(--radius-s); */
-}
 .metadata-property-icon::before {
 display: none;
 }
@@ -137,30 +148,15 @@ display: none;
 .metadata-container {
 transform: unset;
 }
-.metadata-container .metadata-add-button {
-margin: var(--size-2-3);
-border: var(--color-accent);
-border-style: solid;
-margin-left: auto;
-
-}
 
 .metadata-property:not([data-property-key=tags]) .multi-select-pill {
 line-height: unset;
-}
-
-.metadata-property[data-property-key=tags] {
-/* --pill-radius: var(--radius-s); */
 }
 
 .workspace-leaf-content[data-type=all-properties] .view-content,
 .workspace-leaf-content[data-type=file-properties] .view-content,
 .workspace-leaf-content[data-type=properties] .view-content {
 padding: var(--size-4-1);
-}
-
-.metadata-property:focus-within {
-box-shadow: 0 0 0 1px var(--window-border-color);
 }
  
 body{
