@@ -29,38 +29,39 @@
         display: inherit;
     }
 
+    
+    
+    /* Styling of Properties : Thanks to PRISM THEME for the tips */
+
+    .metadata-property:is(
+      [data-property-key="up"],
+      [data-property-key="related"] 
+      ) .metadata-property-key-input {
+        font-weight: var(--bold-weight);
+        font-size: var(--font-ui-large);
+      }
+
       .metadata-property:is(
         [data-property-key="up"],
         [data-property-key="related"] 
-        ) .metadata-property-key-input {
+        ) .metadata-property-value{
           font-weight: var(--bold-weight);
           font-size: var(--font-ui-large);
         }
-
         .metadata-property:is(
           [data-property-key="up"],
           [data-property-key="related"] 
-          ) .metadata-property-value{
-            font-weight: var(--bold-weight);
-            font-size: var(--font-ui-large);
+          ) {
+            border-radius: unset;
+            background-color: var(--accent-08, var(--color-base-30));
           }
-          .metadata-property:is(
-            [data-property-key="up"],
-            [data-property-key="related"] 
-            ) {
-              border-radius: unset;
-              background-color: var(--accent-08, var(--color-base-30));
-            }
 
-          .metadata-property:is(
-            [data-property-key="related"]
-            ){
-              border-bottom: solid;
-              border-bottom-color: var(--color-accent);
-            }
-
-
-/* Styling of Properties : CREDIT TO PRISM THEME */
+        .metadata-property:is(
+          [data-property-key="related"]
+          ){
+            border-bottom: solid;
+            border-bottom-color: var(--color-accent);
+          }
             
 .metadata-properties-heading {
   display: inline-flex;
