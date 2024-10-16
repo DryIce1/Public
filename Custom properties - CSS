@@ -1,33 +1,4 @@
-/* Install Snippet Commands Plugin - Bind both snippets to hotkeys e.g. alt+z and alt+x using to toggle on/off properties */
-/* MANUAL DISPLAY PERMITTED CUSTOM PROPERTIES */
 
-.metadata-property{
-    display: none;
-}
-.metadata-property:is(
-    [data-property-key=""],
-    [data-property-key="up"],
-    [data-property-key="related"], 
-    [data-property-key="source"],
-    [data-property-key="tags"], 
-    [data-property-key="aliases"], 
-    [data-property-key="status"],
-    [data-property-key="type"],
-    [data-property-key="priority"],
-    [data-property-key="rating"],
-    [data-property-key="author"],
-    [data-property-key="highlights"],
-    [data-property-key="disappointments"],
-    [data-property-key="working towards"],
-    [data-property-key="work comments"],
-    [data-property-key="gratitude"],
-    [data-property-key="yesterday"],
-    [data-property-key="week"],
-    [data-property-key="month"],
-    [data-property-key="year"],
-    ) {
-        display: inherit;
-    }
     
     /* Styling of Properties : Thanks to PRISM THEME for the tips */
     .metadata-property:is(
@@ -118,9 +89,10 @@
  .metadata-add-button {
   margin: var(--size-2-3);
   border: var(--color-accent);
+  border-width: .15em;
   border-style: solid;
-  margin-left: auto;
-  border-radius: var(--radius-m);
+  /* margin-left: auto; */
+  border-radius: var(--radius-xl);
   
   }
 
@@ -177,3 +149,8 @@ body{
 --accent-1: hsla(var(--interactive-accent-hsl), 0.15);
 
 }
+
+.metadata-content .action-container .fileclass-btn-container {
+display: none;
+}
+
