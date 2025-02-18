@@ -10,6 +10,9 @@ type:
 description: find again unanswered questions in the vault `- [?] `
 ---
 
+```meta-bind-embed
+[[Shortcuts widget - meta bind]]
+```
 ```dataview
 TABLE
     WITHOUT ID

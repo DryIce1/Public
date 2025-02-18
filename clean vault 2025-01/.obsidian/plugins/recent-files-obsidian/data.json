@@ -1,5 +1,66 @@
 {
-  "recentFiles": [],
+  "recentFiles": [
+    {
+      "basename": "Home",
+      "path": "00 Meta/02 Vault core files/Home.md"
+    },
+    {
+      "basename": "Journal insights",
+      "path": "00 Meta/03 Datascopes/Journal insights.md"
+    },
+    {
+      "basename": "Meta bind - datascope",
+      "path": "00 Meta/03 Datascopes/Meta bind - datascope.md"
+    },
+    {
+      "basename": "Most linked notes",
+      "path": "00 Meta/03 Datascopes/Most linked notes.md"
+    },
+    {
+      "basename": "My themes in reflection",
+      "path": "00 Meta/03 Datascopes/My themes in reflection.md"
+    },
+    {
+      "basename": "Doing the work (DTW) self inquiry - dataview",
+      "path": "00 Meta/03 Datascopes/Doing the work (DTW) self inquiry - dataview.md"
+    },
+    {
+      "basename": "World Events Today",
+      "path": "00 Meta/03 Datascopes/World Events Today.md"
+    },
+    {
+      "basename": "Unanswered questions",
+      "path": "00 Meta/03 Datascopes/Unanswered questions.md"
+    },
+    {
+      "basename": "Recipes - datascope",
+      "path": "00 Meta/03 Datascopes/Recipes - datascope.md"
+    },
+    {
+      "basename": "Catch Up with Friends and Family - datascope",
+      "path": "00 Meta/03 Datascopes/Catch Up with Friends and Family - datascope.md"
+    },
+    {
+      "basename": "Media channels - datascope",
+      "path": "00 Meta/03 Datascopes/Media channels - datascope.md"
+    },
+    {
+      "basename": "Emotion tracker",
+      "path": "00 Meta/03 Datascopes/Emotion tracker.md"
+    },
+    {
+      "basename": "Daily note banners - datascope",
+      "path": "00 Meta/03 Datascopes/Daily note banners - datascope.md"
+    },
+    {
+      "basename": "Birthdays TOC",
+      "path": "00 Meta/03 Datascopes/Birthdays TOC.md"
+    },
+    {
+      "basename": "Books - datascope",
+      "path": "00 Meta/03 Datascopes/Books - datascope.md"
+    }
+  ],
   "omittedPaths": [],
   "omittedTags": [],
   "updateOn": "file-open",

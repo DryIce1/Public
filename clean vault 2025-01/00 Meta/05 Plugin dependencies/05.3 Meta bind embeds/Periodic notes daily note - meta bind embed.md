@@ -9,13 +9,13 @@ tags:
 ```meta-bind-embed
 [[Shortcuts widget - meta bind]]
 ```
-> [!link|no icon]- `=link(dateformat(date(this.file.day) - dur(1day), "yyyy-MM-dd"), "◀🌅")` `BUTTON[periodic-notes-date-switcher]` `=link([[Home]], "🏠")` `=this.file.aliases` `=link(dateformat(date(this.file.day) + dur(1day), "yyyy-MM-dd"), "🌅▶")`
+> [!link|no icon]+ `=link(dateformat(date(this.file.day) - dur(1day), "yyyy-MM-dd"), "◀🌅")` `BUTTON[periodic-notes-date-switcher]` `=link([[Home]], "🏠")` `=this.file.aliases` `=link(dateformat(date(this.file.day) + dur(1day), "yyyy-MM-dd"), "🌅▶")`
 > 
 >> [!photo]- snapshot
 >> - `=link(this.yesterday, "yesterday")`
 >>     - sleep-comments : `=default(this.yesterday.sleep-comments, "*set yesterday's next-plans*")`
 >>     - highlights : `=default(this.yesterday.highlights, "*set yesterday's highlights*")`
->>     - lessons learned : `=default(this.yesterday.lessons-learned, "*set yesterday's lessons learned*")`
+>>     - lessons-learned : `=default(this.yesterday.lessons-learned, "*set yesterday's lessons learned*")`
 >>     - next-plans : `=default(this.yesterday.next-plans, "*set yesterday's next-plans*")`
 >> - last week `=default(link(this.week.last-week), "Last week")` 
 >>     - sleep-comments : `=default(this.week.last-week.sleep-comments, "*set last week's sleep-comments*")`
@@ -77,7 +77,7 @@ tags:
 >>
 >> `INPUT[textArea(placeholder('highlights : key moments? what excited me? how did I move things forward?')):highlights]`
 >> 
->> ### lessons learned
+>> ### lessons-learned
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     link(file.link, dateformat(file.day, "ccc dd")) AS date,

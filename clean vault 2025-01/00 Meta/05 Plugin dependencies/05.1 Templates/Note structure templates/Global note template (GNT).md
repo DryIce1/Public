@@ -68,10 +68,9 @@ const TYPES_CONFIG = {
   recipe: {
     type: "recipe",
     path: "30 Notes",
-    template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Recipe and food template.md",
+    template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Recipe and food - template.md",
     customMetadata: {
       up: "[[Recipes (MOC)]]",
-      ingredients: null,
       "prep-time": null,
       cuisine: null
     },
@@ -232,7 +231,6 @@ function buildYamlString(metadata) {
   // Helper to wrap any string value in double quotes
   function quoted(val) {
     // For simplicity, use JSON.stringify, which returns a valid JS string literal.
-    // e.g. [[Home]] => "[[Home]]"
     if (typeof val === "string") {
       return JSON.stringify(val);
     }

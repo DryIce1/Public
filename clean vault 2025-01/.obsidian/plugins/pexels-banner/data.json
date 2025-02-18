@@ -122,6 +122,22 @@
       "directChildrenOnly": false,
       "enableImageShuffle": false,
       "shuffleFolder": ""
+    },
+    {
+      "folder": "00 Meta",
+      "image": "https://images.unsplash.com/photo-1517299321609-52687d1bc55a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageDisplay": "cover",
+      "imageRepeat": false,
+      "yPosition": 100,
+      "xPosition": 50,
+      "contentStartPosition": 250,
+      "bannerHeight": 350,
+      "fade": -75,
+      "borderRadius": 25,
+      "titleColor": "var(--inline-title-color)",
+      "directChildrenOnly": false,
+      "enableImageShuffle": false,
+      "shuffleFolder": ""
     }
   ],
   "contentStartPosition": 250,

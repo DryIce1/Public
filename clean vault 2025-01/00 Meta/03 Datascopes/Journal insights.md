@@ -18,8 +18,6 @@ summary:
 ```meta-bind-embed
 [[Shortcuts widget - meta bind]]
 ```
-# Journal insights
-
 > [!NOTE] adjust the date timeframe and file limit
 
 - **date-from**:: 2020-01-01

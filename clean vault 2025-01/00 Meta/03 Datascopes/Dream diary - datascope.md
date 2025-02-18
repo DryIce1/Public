@@ -10,6 +10,9 @@ type:
 description: a dream log where the daily note contains `dream` or `dreams` metadata
 ---
 
+```meta-bind-embed
+[[Shortcuts widget - meta bind]]
+```
 ```dataview
 TABLE 
     WITHOUT ID 

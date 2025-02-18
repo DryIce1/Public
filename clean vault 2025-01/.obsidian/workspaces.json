@@ -6,11 +6,11 @@
         "type": "split",
         "children": [
           {
-            "id": "1431c25330101022",
+            "id": "fa96df15c78c016c",
             "type": "tabs",
             "children": [
               {
-                "id": "2b92803696b60964",
+                "id": "2350243bf625a498",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -20,7 +20,7 @@
                     "source": false,
                     "backlinks": true,
                     "backlinkOpts": {
-                      "collapseAll": false,
+                      "collapseAll": true,
                       "extraContext": false,
                       "sortOrder": "alphabetical",
                       "showSearch": false,
@@ -53,7 +53,7 @@
                 "state": {
                   "type": "file-explorer",
                   "state": {
-                    "sortOrder": "alphabetical",
+                    "sortOrder": "byModifiedTime",
                     "autoReveal": false
                   },
                   "icon": "lucide-folder-closed",
@@ -66,7 +66,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "2025-W01",
+                    "query": "",
                     "matchingCase": true,
                     "explainSearch": true,
                     "collapseAll": true,
@@ -270,13 +270,10 @@
           "obsidian-book-search-plugin:Create new book note": false
         }
       },
-      "active": "2b92803696b60964",
-      "mtime": "2025-02-18T02:14:01+01:00",
+      "active": "1dc05df1f9c54d06",
+      "mtime": "2025-02-18T06:13:18+01:00",
       "workspaces-plus:settings-v1": {
-        "explorerFoldState": [
-          "40 Projects/2025",
-          "40 Projects/2025/Q1"
-        ]
+        "explorerFoldState": []
       }
     }
   },

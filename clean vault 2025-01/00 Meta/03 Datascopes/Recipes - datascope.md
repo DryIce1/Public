@@ -14,8 +14,7 @@ TABLE
         "", 
         "<img align='left' width='120' src='" + default(cover, banner) + "'>") as ""
 FROM !"00 Meta"
-    where contains(tags, "on/food")
-    OR contains(type, "recipes")
+    WHERE contains(type, "recipe")
 SORT 
     file.cday desc, 
     file.name asc
