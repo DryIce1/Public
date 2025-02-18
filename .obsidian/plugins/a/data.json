@@ -251,7 +251,7 @@
         },
         {
           "id": "85cd794e-7036-4d3c-a992-dba7fdd9c0dc",
-          "name": "Periodic notes - open switcher",
+          "name": "Periodic notes - open date switcher (desktop)",
           "type": "Macro",
           "command": false,
           "macroId": "9dca15f0-eb74-481a-a4c0-0a66806f7d9f"
@@ -321,7 +321,7 @@
       "runOnStartup": false
     },
     {
-      "name": "Periodic notes - open switcher",
+      "name": "Periodic notes - open date switcher (desktop)",
       "id": "9dca15f0-eb74-481a-a4c0-0a66806f7d9f",
       "commands": [
         {

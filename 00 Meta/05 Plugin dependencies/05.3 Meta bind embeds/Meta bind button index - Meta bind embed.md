@@ -7,7 +7,7 @@ label: ""
 icon: calendar-search
 hidden: true
 class: ""
-tooltip: Periodic notes date switcher
+tooltip: Periodic notes date switcher (desktop only)
 id: periodic-notes-date-switcher
 style: default
 actions:

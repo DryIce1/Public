@@ -1,0 +1,1117 @@
+/*
+  accent theme
+  CSS snippet for Obsidian
+  Author: dryice
+  Version: 0.1
+  License: MIT License (c) 2025 DryIce1
+
+  TABLE OF CONTENTS
+  ================================
+  1) BASE VARIABLES & THEME SETUP
+  2) GLOBAL BODY TWEAKS
+  3) CALLOUTS
+  4) TABLES
+  5) CHECKLISTS (TASKS PLUGIN)
+  6) METADATA PROPERTIES
+  7) PLUGIN OVERRIDES
+     a) Calendar plugin
+     b) Any other plugin overrides
+  8) EMBEDDED IFRAMES
+  ================================
+*/
+
+/* ==========================================
+   1) BASE VARIABLES & THEME SETUP
+   ------------------------------------------
+   - Defines theme-light and theme-dark colors
+   - Defines accent-0..accent-10 from an HSL base
+   - Basic radius, line-height, etc.
+=========================================== */
+
+.theme-light {
+  /* Custom color vars */
+  --red: 212, 13, 59;
+  --red-soft: 189, 89, 89;
+  --rose: 220, 147, 134;
+  --dawn: 232, 67, 81;
+  --orange: 194, 123, 0;
+  --yellow: 226, 149, 34;
+  --green: 63, 161, 42;
+  --blue: 0, 89, 184;
+  --purple: 101, 66, 185;
+  --blue: 0, 89, 184;
+}
+
+.theme-dark {
+  /* Custom color vars */
+  --red: 239, 133, 151;
+  --red-soft: 189, 89, 89;
+  --rose: 249, 217, 212;
+  --dawn: 240, 156, 162;
+  --orange: 194, 123, 0;
+  --yellow: 239, 211, 157;
+  --green: 63, 161, 42;
+  --blue: 0, 89, 184;
+  --purple: 101, 66, 185;
+}
+
+body {
+  /* Accent strengths (0 to 10) from the single HSL var */
+  --accent-0: hsla(var(--interactive-accent-hsl), 0);
+  --accent-02: hsla(var(--interactive-accent-hsl), 0.02);
+  --accent-04: hsla(var(--interactive-accent-hsl), 0.04);
+  --accent-06: hsla(var(--interactive-accent-hsl), 0.06);
+  --accent-08: hsla(var(--interactive-accent-hsl), 0.08);
+  --accent-1: hsla(var(--interactive-accent-hsl), 0.15);
+  --accent-2: hsla(var(--interactive-accent-hsl), 0.2);
+  --accent-3: hsla(var(--interactive-accent-hsl), 0.3);
+  --accent-4: hsla(var(--interactive-accent-hsl), 0.4);
+  --accent-5: hsla(var(--interactive-accent-hsl), 0.5);
+  --accent-6: hsla(var(--interactive-accent-hsl), 0.6);
+  --accent-7: hsla(var(--interactive-accent-hsl), 0.7);
+  --accent-8: hsla(var(--interactive-accent-hsl), 0.8);
+  --accent-9: hsla(var(--interactive-accent-hsl), 0.9);
+  --accent-10: hsla(var(--interactive-accent-hsl), 1);
+
+  /* radius/spacing */
+  --radius-xs: 0.25em;
+  --radius-s: 0.5em;
+  --radius-m: 0.75em;
+  --radius-l: 1em;
+  --radius-xl: 1.5em;
+
+  /* font styling */
+  --bold-color: rgb(var(--red));
+  --italic-color: rgb(var(--green));
+  --bold-italic-color: rgb(var(--yellow));
+
+/* Header styles */
+  --h1-size: 1.5em;
+  --h2-size: 1.3em;
+  --h3-size: 1.2em;
+  --h4-size: 1.1em;
+  --h5-size: 1em;
+  --h6-size: 1em;
+  --h1-line-height: 1em;
+  --h2-line-height: 1em;
+  --h3-line-height: 1em;
+  --h4-line-height: 1em;
+  --h5-line-height: 1em;
+  --h6-line-height: 1em;
+  --h1-color: red;
+  --h2-color: orange;
+  --h3-color: green;
+  --h4-color: purple;
+  --h5-color: blue;
+  --h6-color: aqua;
+}
+
+/* Inline title style */
+  div.inline-title {
+  color: var(--accent-10) !important;
+  font-size: 2em !important;
+  }
+
+body{
+  /* ====== Tabs and Frame ======== */
+  --tab-text-color: var(--text-muted);
+  --tab-text-color-active: var(--text-muted);
+  --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-muted);
+  --tab-text-color-focused-highlighted: var(--text-accent);
+  --tab-radius-active: var(--radius-l) var(--radius-l) 0 0  ;
+  --tab-container-background: var(--accent-1) !important;
+  --titlebar-background: var(--accent-2);
+  --titlebar-background-focused: var(--accent-3);
+  --tab-outline-color: var(--accent-4);
+  --tab-outline-width: 1px;
+  --divider-width: 1px;
+  --background-color: var(--accent-08);
+  --border-color: var(--accent-4);
+  --border-color-accent: var(--accent-7);
+  --divider-color: var(--border-color);
+  --border-width: 2.5px;
+  --border-width-min: 1.5px;
+
+}
+
+button.MS-OpenSnippet {
+  background-color: var(--background-color);
+}
+
+.checkbox-container:after {
+  background-color: ;
+  /* pointer-events: none;
+  content: '';
+  display: block;
+  position: absolute;
+  width: var(--toggle-thumb-width);
+  height: var(--toggle-thumb-height);
+  margin: var(--toggle-border-width) 0 0 0;
+  border-radius: var(--toggle-thumb-radius);
+  transition: transform 0.15s ease-in-out, width 0.1s ease-in-out, left 0.1s ease-in-out;
+  left: 0;
+  transform: translate3d(var(--toggle-border-width), 0, 0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); */
+}
+
+/* ==========================================
+   2) GLOBAL BODY TWEAKS
+   ------------------------------------------
+   - Hide frontmatter in reading mode
+   - Highlight active line
+   - Minor UI adjustments (prompts, modals)
+=========================================== */
+
+/* Highlight the currently active line in source mode */
+.markdown-source-view .cm-active.cm-line {
+  background-color: var(--accent-08);
+  border-radius: var(--radius-m);
+}
+.theme-dark .markdown-source-view .cm-active.cm-line {
+  background-color: var(--accent-1);
+}
+
+  /* Mobile workspace drawer - sidebars */
+  body.is-mobile .workspace-drawer-inner{
+  background-color: var(--accent-02);
+  }
+  body.is-tablet .workspace-drawer-inner {
+  background-color: var(--accent-02);
+  }
+
+/* Workspace active icons */
+.mod-left-split .workspace-tab-header.has-active-menu, 
+.mod-right-split .workspace-tab-header.has-active-menu, 
+.mod-left-split .workspace-tab-header.is-active, 
+.mod-right-split .workspace-tab-header.is-active {
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: var(--border-width-min);
+  margin-bottom: -0.25em;
+  background-color: var(--accent-2);
+}
+
+/* prompt boxes  */
+  body {
+  --prompt-border-color: var(--border-color-accent);
+  --prompt-border-width: var(--border-width);
+  }
+
+  input.prompt-input {
+  background-color: var(--accent-1);
+  font-size: var(--font-ui-large);
+  border-color: var(--border-color-accent);
+  border-width: var(--border-width-min);
+  }
+
+  .prompt-instructions {
+  background-color: var(--accent-1);
+  box-shadow: var(--shadow-l);
+  border-width: var(--border-width-min);
+  border-color: var(--border-color-accent);
+  border-style: solid;
+  }
+
+  /* settings modal outter frame styling  */
+  .modal {
+    border-width: var(--border-width);
+    border-color: var(--border-color-accent);
+    border-style: solid;
+    }
+
+/* text area input */
+  textarea,
+  input[type='text'],
+  input[type='search'],
+  input[type='email'],
+  input[type='password'],
+  input[type='number']
+  {
+  background-color: var(--accent-0.8);
+  color: var(--text-accent);
+  border-color: var(--border-color-accent);
+  border-width: var(--border-width-min);
+  }
+
+  textarea:active, 
+  input[type='text']:active, 
+  input[type='search']:active, 
+  input[type='email']:active, 
+  input[type='password']:active, 
+  input[type='number']:active, 
+  textarea:focus, 
+  input[type='text']:focus, 
+  input[type='search']:focus, 
+  input[type='email']:focus, 
+  input[type='password']:focus, 
+  input[type='number']:focus, 
+  textarea:focus-visible, 
+  input[type='text']:focus-visible, 
+  input[type='search']:focus-visible, 
+  input[type='email']:focus-visible,
+  input[type='password']:focus-visible, 
+  input[type='number']:focus-visible {
+    border-width: var(--border-width-min);
+    border-color: var(--border-color-accent);
+  }
+
+  body:not(.is-grabbing) .nav-file-title.is-active:hover, body:not(.is-grabbing) .nav-folder-title.is-active:hover, .nav-file-title.is-active, .nav-folder-title.is-active{
+    color: var(--accent-10);
+    font-weight: bold;
+    background-color: var(--background-color);
+  }
+
+/* Vault name styling */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
+  border-color: var(--border-color-accent);
+  border-style: solid;
+  border-width: var(--border-width-min);
+  background-color: var(--accent-02);
+}
+
+/* tab frame container margins */
+.mod-root .workspace-tab-header-container-inner {
+  margin-top: 0px;
+  padding: 3px 15px 0px;
+}
+
+/* =========== Tag styling =========== */
+
+  .cm-hashtag {
+    border: 1px solid;
+    /* font-weight: bold; */
+    font-style: italic;
+  }
+
+  .cm-hashtag.cm-hashtag-begin {
+    border-top-left-radius: var(--tag-radius);
+    border-bottom-left-radius: var(--tag-radius);
+    border-right: none;
+    border-left: 2px solid var(--accent-10);
+    padding-left: var(--tag-padding-x);
+  }
+
+  .cm-hashtag.cm-hashtag-end {
+      border-top-right-radius: var(--tag-radius);
+      border-bottom-right-radius: var(--tag-radius);
+      border-left: none;
+      border-right:1px solid var(--accent-10);
+      padding-right: var(--tag-padding-x);
+  }
+
+  body {
+    --tag-padding-x: 3px;
+    --tag-padding-y: 1px;
+  }
+
+  /* =========== Notice Messages =========== */
+.notice-container {
+  top: var(--header-height);
+  padding-right: 20px;
+}
+.is-mobile .notice-container {
+  top: calc(var(--header-height)*.8);
+}
+
+.notice {
+  /* text color */
+  color: var(--accent-10) !important;
+  background-color: var(--color-base-30);
+  border-color: var(--border-color-accent);
+  border-style: solid;
+  border-left-width: var(--border-width);
+  border-right-width: var(--border-width);
+  font-size:   var(--font-ui-medium);
+  border-radius: var(--radius-xl);
+}
+.is-mobile .notice {
+  /* text color */
+  color: var(--accent-10) !important;
+  background-color: var(--color-base-30);
+  border-color: var(--border-color-accent);
+  border-style: solid;
+  right: 0;
+  left: 0;
+  border-left-width: var(--border-width);
+  border-right-width: var(--border-width);
+  font-size:   var(--font-ui-small);
+  ;
+}
+
+/* ====== ICON COLOURS ======== */
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon 
+{
+  color: var(--accent-10);
+}
+
+.workspace-drawer-active-tab-icon, 
+.workspace-drawer-tab-option-item-icon 
+{
+color: var(--accent-8);
+}
+
+.clickable-icon {
+  color: var(--accent-8) !important;
+}
+.workspace-tab-header-inner .workspace-tab-header-inner-icon {
+  color: var(--accent-8);
+}
+.titlebar-button{
+  color: var(--accent-8);
+}
+
+/* accent colour when hover over buttons */
+@media (hover: hover) {
+  button:hover {
+    background-color: var(--accent-6) !important;
+    color: var(--background-primary);
+    box-shadow: var(--input-shadow);
+  }
+}
+
+  /*
+ * ========================================================
+ * IMAGES
+ * ========================================================
+ - algin centre
+ - round borders
+ - colored borders (accent)
+ - https://forum.obsidian.md/t/how-to-center-an-image-automatically-with-minimal-theme-and-image-auto-upload-plugin/34683/4?u=dryice
+ */
+
+img 
+{
+  border-style: solid;
+  border-color: var(--border-color-accent);
+  background-color: var(--accent-04);
+  border-radius: var(--radius-xl);
+  border-width: var(--border-width-min);
+  border-left-width: var(--border-width);
+  border-right-width: var(--border-width);
+  padding: 1px;
+  display: block;
+  margin: auto;
+}
+ /* Render images in tables with transparent background */
+ table img
+  {
+  background-color: unset;
+}
+
+/* ------------------------------------------------------------------
+   CALLOUTS
+   ------------------------------------------------------------------
+   - Shared / default styling
+   - Metadata-based positioning (float left/right, center)
+   - “no-icon”, “no-title”, “fit-content” options
+   - Specific callout types (answer, photo, hidden, link, transparent, 
+     infobox, image-description, dx, medicine, book, search, etc.)
+   ------------------------------------------------------------------ */
+
+/* 1) Basic Callout Styling */
+.callout {
+  border-width: 0.1em;
+  border-left-width: 0.3em;
+  border-right-width: 0.3em;
+  --callout-radius: var(--radius-xl);
+  /* Default icon if none set */
+  --callout-icon: lucide-plus-circle;
+  padding: 0.5em 0.25em;
+}
+
+/* Additional callout structural classes (optional) */
+.callout-icon {}
+.callout-title {}
+.callout-title-inner { flex-grow: 1; }
+.callout-content {}
+
+/* 2) Metadata-based Positioning (from SIRVB floating callouts) */
+:not(.is-live-preview) .callout:is([data-callout-metadata~="p+l"], [data-callout-metadata~="left"]) {
+  float: left;
+  margin-right: 8px;
+}
+:not(.is-live-preview) .callout:is([data-callout-metadata~="p+r"], [data-callout-metadata~="right"]) {
+  float: right;
+  margin-left: 8px;
+}
+.callout:is([data-callout-metadata~=ctr], [data-callout-metadata~=center]) {
+  display: block;
+  margin: auto;
+  float: unset;
+}
+
+/* 3) Hide Icon or Hide Title, Fit-Content, etc. */
+.callout:is([data-callout-metadata="no-icon"], [data-callout-metadata="no icon"]) .callout-icon {
+  display: none;
+}
+/* If there are nested callouts inside a "no-icon" callout, re-show icons inside them: */
+.callout:is([data-callout-metadata="no-icon"]) .callout .callout-icon {
+  display: inline;
+}
+
+/* “Fit” or “Max Width” for callout dimensions */
+.callout[data-callout-metadata="fit"] {
+  max-width: fit-content;
+  padding: 0.5em;
+}
+.callout[data-callout-metadata="mxw"] {
+  max-width: fit-content;
+  min-width: fit-content;
+}
+.callout[data-callout="mxw"].is-collapsed {
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+/* Center the callout title text */
+.callout[data-callout-metadata="title-center"] .callout-title {
+  text-align: center;
+}
+
+/* Additional float variations: metadata keys “r”, “c”, “cmin” */
+.callout[data-callout-metadata="r"] {
+  max-width: fit-content;
+  position: sticky;
+  margin-left: auto;
+}
+.cm-editor .callout[data-callout-metadata="r"] {
+  margin-left: auto;
+}
+.callout[data-callout-metadata="c"] {
+  max-width: fit-content;
+  margin: auto;
+}
+.markdown-source-view.mod-cm6 .cm-editor .callout[data-callout-metadata="c"] {
+  margin: auto;
+}
+.callout[data-callout-metadata="cmin"] {
+  max-width: min-content;
+  margin: auto;
+}
+.markdown-source-view.mod-cm6 .cm-editor .callout[data-callout-metadata="cmin"] {
+  margin: auto;
+}
+
+/* No title callout (hide the callout-title) */
+.callout:is([data-callout-metadata="no title"], [data-callout-metadata="no-title"]) .callout-title {
+  display: none;
+}
+
+/* 4) “Button-Callout” Class Example */
+.button-callout .callout-icon {
+  display: none;
+}
+.button-callout .callout-title-inner {
+  text-align: center;
+}
+.button-callout .callout.is-collapsed {
+  max-width: 90%;
+  margin: auto;
+}
+.button-callout .markdown-source-view.mod-cm6 .cm-editor .callout {
+  margin: auto;
+}
+.button-callout :is(.internal-embed .markdown-embed-content) .callout {
+  margin: auto;
+  max-width: 100%;
+}
+
+/* 5) Per-Callout-Type Definitions
+   (data-callout="answer", "photo", "medicine", etc.) */
+
+/* Hidden callout */
+.callout[data-callout="hidden"] {
+  display: none;
+}
+
+/* “answer” callout */
+.callout[data-callout="answer"] {
+  --callout-icon: mail-question;
+  --callout-color: var(--orange);
+}
+.callout[data-callout="answer"].is-collapsed {
+  max-width: fit-content;
+}
+
+/* “calendar” callout */
+.callout[data-callout="calendar"] {
+  --callout-icon: calendar;
+  --callout-color: var(--dawn)
+}
+
+/* “photo” callout */
+.callout[data-callout="photo"] {
+  --callout-icon: camera;
+  --callout-color: var(--green);
+}
+
+/* “link” callout */
+.callout[data-callout="link"] {
+  border-color: var(--border-color-accent);
+  --callout-color: 89, 89, 89;
+  --callout-icon: arrow-up-circle;
+  max-width: fit-content;
+  margin-left: auto; /* for alignment in reading mode */
+}
+.cm-editor .callout[data-callout="link"] {
+  margin-left: auto; /* for alignment in editing mode */
+}
+.callout[data-callout="link"] .callout-title-inner {
+  text-align: center;
+  font-size: larger;
+}
+.callout[data-callout="link"]:not(.is-collapsed) {
+  min-width: 100%;
+}
+
+/* “transparent” callout */
+.callout[data-callout="transparent"] {
+  border-color: transparent;
+  --callout-color: transparent;
+  --callout-icon: none;
+}
+.callout[data-callout="transparent"] .callout-icon {
+  display: none;
+}
+.callout[data-callout="transparent"] .callout-title-inner {
+  font-size: larger;
+}
+
+/* “infobox” callout */
+.callout[data-callout="infobox"] {
+  /* max-width: fit-content !important; */
+}
+
+/* “image-description” callout */
+.callout[data-callout="image-description"] {
+  border-color: var(--border-color-accent);
+  border-width: var(--border-width-min);
+  border-left-width: var(--border-width);
+  border-right-width: var(--border-width);
+  background-color: var(--accent-04);
+  max-width: fit-content;
+  padding: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  display: block;
+  margin: auto;
+}
+.callout[data-callout="image-description"] .callout-title {
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: calc(var(--font-ui-small) * 0.95);
+}
+.callout[data-callout="image-description"] .callout-icon {
+  display: none !important;
+}
+.callout[data-callout="image-description"] .callout-content {
+  text-align: center;
+  font-style: italic;
+  font-size: calc(var(--font-ui-small) * 0.95);
+  margin-block: -1em;
+}
+.callout[data-callout="image-description"] img {
+  border-style: none;
+  padding: none;
+  background-color: none;
+}
+
+/* “dx” callout */
+.callout[data-callout="dx"] {
+  --callout-icon: lucide-stethoscope;
+  --callout-color: var(--orange);
+  background-color: rgba(var(--callout-color), 0.1);
+}
+
+/* “medicine” callout */
+.callout[data-callout="medicine"] {
+  --callout-icon: lucide-cross;
+  --callout-color: var(--red);
+  background-color: rgba(var(--callout-color), 0.2);
+}
+
+/* “book” callout */
+.callout[data-callout="book"] {
+  --callout-icon: lucide-book-open;
+  --callout-color: var(--rose);
+  background-color: rgba(var(--callout-color), 0.2);
+}
+
+/* “search” callout */
+.callout[data-callout="search"] {
+  --callout-icon: file-search;
+  --callout-color: var(--orange);
+  background-color: unset;
+}
+.callout[data-callout="search"].is-collapsed {
+  max-width: fit-content;
+}
+
+/* “search-folder” callout */
+.callout[data-callout="search-folder"] {
+  --callout-icon: folder-search;
+  --callout-color: var(--orange);
+}
+.callout[data-callout="search-folder"].is-collapsed {
+  max-width: fit-content;
+}
+
+/* ==========================================
+   4) TABLES
+   ------------------------------------------
+   - Center them
+   - Dotted borders
+   - Alternate row coloring
+=========================================== */
+
+/* Table header background colour */
+thead {
+  background-color: var(--accent-4);
+}
+
+/* Table rows */
+.markdown-preview-view table {
+  border: var(--border-width-min) solid var(--border-color-accent);
+  border-collapse: inherit;
+  border-spacing: 0px;
+  border-radius: var(--radius-xl);
+}
+
+
+.cm-html-embed td, .markdown-rendered td, .cm-html-embed th, .markdown-rendered th {
+  padding: 4px ;
+  border: var(--border-width-min) solid var(--border-color-accent);
+}
+
+/* Round corners for first/last cells */
+th:first-of-type {
+  border-top-left-radius: var(--radius-xl);
+}
+th:last-of-type {
+  border-top-right-radius: var(--radius-xl);
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: var(--radius-xl);
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: var(--radius-xl);
+}
+
+/* alternating background colour */
+tbody tr:nth-child(even) {
+  background-color: var(--accent-04);
+}
+
+/* hover highlight */
+body { 
+  --table-row-background-hover: var(--accent-1);
+ }
+
+
+
+/* ==========================================
+   5) TASKS PLUGIN
+   ------------------------------------------
+   - Priority-based checkboxes
+   - Alternative checkmarks
+ * By David Phillips (autonia) https://github.com/autonia
+ * From https://github.com/obsidian-tasks-group/obsidian-tasks/discussions/622#discussioncomment-2649299
+   =========================================== */
+
+/* Priority as checkbox color (Tasks plugin) */
+.task-list-item[data-task-priority="highest"] input[type=checkbox] {
+  box-shadow: 0px 0px 1px 1px rgb(var(--red));
+  border-color: rgb(var(--red));
+}
+.task-list-item[data-task-priority="high"] input[type=checkbox] {
+  box-shadow: 0px 0px 1px 1px rgb(var(--brown));
+  border-color: rgb(var(--brown));
+}
+.task-list-item[data-task-priority="medium"] input[type=checkbox] {
+  box-shadow: 0px 0px 1px 1px rgb(var(--green));
+  border-color: rgb(var(--green));
+}
+.task-list-item[data-task-priority="normal"] input[type=checkbox] {
+  box-shadow: 0px 0px 1px 1px var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+.task-list-item[data-task-priority="low"] input[type=checkbox] {
+  box-shadow: 0px 0px 1px 1px var(--color-cyan);
+  border-color: var(--color-cyan);
+}
+
+.task-list-item[data-task-priority="lowest"] input[type=checkbox] {
+  box-shadow: 0px 0px 1px 1px var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  /* No strikethrough if you prefer none */
+  text-decoration: none;
+  color: var(--text-faint);
+}
+
+/* custom icons for tasks:
+   input[data-task='!'], [data-task='*'], etc.
+   (shortened for brevity) */
+
+/* ==========================================
+   6) METADATA PROPERTIES
+   ------------------------------------------
+   - Built-in Obsidian “Properties” styles
+   - You mentioned these are very important
+=========================================== */
+
+/* ================================ */
+/* METADATA PROPERTIES – ORGANIZED  */
+/* ================================ */
+
+/* ------------------------------ */
+/* Special property keys (like "up", "related", etc.)
+   - This block modifies background, font-size,
+     and font-weight for these listed keys.
+   - You can remove or add more keys as needed. */
+/* ------------------------------ */
+
+.metadata-property:is(
+  [data-property-key="up"],
+  [data-property-key="related"],
+  [data-property-key="yesterday"],
+  [data-property-key="week"],
+  [data-property-key="last-week"],
+  [data-property-key="month"],
+  [data-property-key="days"],
+  [data-property-key="last-month"],
+  [data-property-key="quarter"],
+  [data-property-key="year"],
+  [data-property-key="weeks"],
+  [data-property-key="last-quarter"],
+  [data-property-key="last-year"],
+  [data-property-key="quarters"],
+  [data-property-key="months"],
+  [data-property-key="decade"]
+) {
+  border-radius: unset;
+  background-color: var(--accent-2, var(--color-base-30));
+}
+
+/* Increase font weight/size for the same “special” keys */
+.metadata-property:is(
+  [data-property-key="up"],
+  [data-property-key="related"],
+  [data-property-key="yesterday"],
+  [data-property-key="week"],
+  [data-property-key="last-week"],
+  [data-property-key="month"],
+  [data-property-key="days"],
+  [data-property-key="last-month"],
+  [data-property-key="quarter"],
+  [data-property-key="year"],
+  [data-property-key="weeks"],
+  [data-property-key="last-quarter"],
+  [data-property-key="last-year"],
+  [data-property-key="quarters"],
+  [data-property-key="months"],
+  [data-property-key="decade"]
+) .metadata-property-key-input {
+  font-weight: var(--bold-weight);
+  font-size: var(--font-ui-large);
+}
+
+.metadata-property:is(
+  [data-property-key="up"],
+  [data-property-key="related"],
+  [data-property-key="yesterday"],
+  [data-property-key="week"],
+  [data-property-key="last-week"],
+  [data-property-key="month"],
+  [data-property-key="days"],
+  [data-property-key="last-month"],
+  [data-property-key="quarter"],
+  [data-property-key="year"],
+  [data-property-key="weeks"],
+  [data-property-key="last-quarter"],
+  [data-property-key="last-year"],
+  [data-property-key="quarters"],
+  [data-property-key="months"],
+  [data-property-key="decade"]
+) .metadata-property-value {
+  font-weight: var(--bold-weight);
+  font-size: var(--font-ui-large);
+}
+
+/* Add a bottom border for certain property keys */
+.metadata-property:is(
+  [data-property-key="related"],
+  [data-property-key="week"],
+  [data-property-key="days"],
+  [data-property-key="weeks"],
+  [data-property-key="months"],
+  [data-property-key="years"]
+) {
+  border-bottom: solid;
+  border-bottom-color: var(--color-accent);
+}
+
+/* If these keys appear, 
+   keep background-color unset for property-key-input 
+   and property-icon – i.e. override the default. */
+.metadata-property:is(
+  [data-property-key="up"],
+  [data-property-key="related"],
+  [data-property-key="yesterday"],
+  [data-property-key="week"],
+  [data-property-key="last-week"],
+  [data-property-key="month"],
+  [data-property-key="days"],
+  [data-property-key="last-month"],
+  [data-property-key="quarter"],
+  [data-property-key="year"],
+  [data-property-key="weeks"],
+  [data-property-key="last-quarter"],
+  [data-property-key="last-year"],
+  [data-property-key="quarters"],
+  [data-property-key="months"],
+  [data-property-key="decade"]
+) input.metadata-property-key-input {
+  background-color: unset;
+}
+.metadata-property:is(
+  [data-property-key="up"],
+  [data-property-key="related"],
+  [data-property-key="yesterday"],
+  [data-property-key="week"],
+  [data-property-key="last-week"],
+  [data-property-key="month"],
+  [data-property-key="days"],
+  [data-property-key="last-month"],
+  [data-property-key="quarter"],
+  [data-property-key="year"],
+  [data-property-key="weeks"],
+  [data-property-key="last-quarter"],
+  [data-property-key="last-year"],
+  [data-property-key="quarters"],
+  [data-property-key="months"],
+  [data-property-key="decade"]
+) .metadata-property-icon {
+  background-color: unset;
+}
+
+/* Property icons */
+.metadata-property-icon {
+  background-color: var(--accent-06);
+  color: var(--accent-10);
+  padding-right: 5px;
+}
+
+/* ------------------------------ */
+/* HEADER + CONTENT WRAPPERS
+   FOR THE PROPERTIES SECTION
+/* ------------------------------ */
+
+.metadata-properties-heading {
+  display: inline-flex;
+  width: 100%;
+  padding: var(--size-4-2);
+  margin-bottom: unset;
+  background-color: var(--accent-2, var(--color-base-30));
+  border-width: var(--border-width-min) ;
+  border: solid;
+  border-color: var(--color-accent);
+  border-bottom: unset;
+  border-top-left-radius: var(--radius-l);
+  border-top-right-radius: var(--radius-l);
+}
+
+.metadata-properties-heading.is-collapsed {
+  border-bottom: solid;
+  border-bottom-left-radius: var(--radius-l);
+  border-bottom-right-radius: var(--radius-l);
+  border-color: var(--color-accent);
+  width: 100%;
+  min-width: fit-content;
+  max-width: fit-content;
+}
+
+.metadata-properties-title {
+  display: flex;
+  color: var(--color-accent);
+  align-items: center;
+  width: 100%;
+  margin-bottom: unset;
+  font-weight: var(--bold-weight);
+  font-size: var(--font-ui-large);
+}
+
+/* Icon in the heading title */
+.metadata-properties-title::before {
+  align-items: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: var(--size-4-2);
+  content: "";
+  background-color: var(--text-accent);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-archive'%3E%3Crect width='20' height='5' x='2' y='4' rx='2'/%3E%3Cpath d='M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9'/%3E%3Cpath d='M10 13h4'/%3E%3C/svg%3E");
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 18px;
+}
+
+/* The content container under the heading */
+.metadata-content {
+  border-color: var(--color-accent);
+  border-style: solid;
+  border-top: unset;
+  border-radius: var(--radius-l);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* collapsed properties display settings */
+.metadata-properties-heading .collapse-indicator {
+  position: relative;
+  left: unset;
+  order: 2;
+}
+
+/* The add button  */
+.metadata-add-button {
+  margin: var(--size-2-2);
+  border: var(--color-accent);
+  border-width: var(--border-width-min) ;
+  border-style: solid;
+  border-radius: var(--radius-xl);
+}
+/* “Add” button in the metadata container */
+.metadata-container .metadata-add-button {
+  color: var(--text-accent);
+}
+
+/* When properties are displayed in different workspace contexts */
+.workspace-leaf-content[data-type=all-properties] .view-content,
+.workspace-leaf-content[data-type=file-properties] .view-content,
+.workspace-leaf-content[data-type=properties] .view-content {
+  padding: var(--size-4-1);
+}
+
+/* Additional top border for certain “split” containers 
+   within the workspace. */
+   .workspace-split.mod-horizontal.mod-sidedock.mod-left-split .metadata-container .metadata-content {
+    border-top: solid;
+    border-top-color: var(--color-accent);
+    border-top-left-radius: var(--radius-l);
+    border-top-right-radius: var(--radius-l);
+  }
+
+  /* Key label sizing & min/max widths */
+.metadata-property-key {
+  min-width: 30%;
+  max-width: 50%;
+}
+
+/* property key at correct height */
+input.metadata-property-key-input,
+.metadata-property-icon {
+  height: 100%;
+}
+
+/* remove metadata-gaps */
+body {
+  --metadata-gap: 0px;
+}
+
+/* ==========================================
+   7) PLUGIN OVERRIDES
+   ------------------------------------------
+   a) Calendar plugin
+   b) Meta Bind
+=========================================== */
+
+
+/* .calendar {
+  font-family: var(--font-monospace);
+}
+.calendar .day.has-note {
+  color: var(--accent-10);
+  border: var(--border-width-min) solid var(--accent-1);
+  background-color: var(--accent-02);
+  border-radius: var(--radius-s);
+}
+.calendar .day.today {
+  background-color: var(--accent-2);
+  text-decoration: underline;
+} */
+
+/* ========== Calendar Plugin ========== */
+.calendar {
+  font-family: var(--font-monospace);
+}
+.calendar .day {
+  padding: 0 !important;
+  border: 0;
+}
+.calendar .day.has-note {
+  color: var(--accent-10);
+  border: var(--border-width-min) solid var(--accent-1);
+  background-color: var(--accent-02);
+  border-radius: var(--radius-s);
+}
+.calendar .day.today {
+  background-color: var(--accent-1);
+  text-decoration: underline;
+}
+.calendar .day.active {
+  border: 2.5px solid var(--accent-5);
+  background-color: var(--accent-3);
+  text-decoration: underline;
+}
+
+.calendar tbody td:nth-child(1) {
+  border-right-width: 2px;
+  border-color: var(--border-color-accent);
+}
+.calendar tbody td:first-child  {
+  background-color: var(--accent-1);
+}
+
+/* ========== Meta Bind CSS changs ========== */
+
+  /* daily notes css class */
+  .mb-input-textarea{
+    width: 99%;
+    height: calc(var(--font-ui-large) * 3);
+    resize: vertical;
+}
+
+.mb-input-inline{
+  display: contents !important;
+  width: 2%;
+  min-width: 100% !important;
+  height: calc(var(--font-ui-large) * 5);
+  resize: vertical;
+}
+
+.log .callout.callout:is([data-callout=reflection]) {
+  min-height: 25em;
+  max-height: 25em;
+  /* Enable scrolling if content exceeds max-height */
+      overflow-y: auto; 
+      overflow-x: auto; 
+}
+
+.callout[data-callout="reflection"].is-collapsed {
+  min-height: inherit !important;
+  max-height: inherit !important;
+}
+
+.mb-input-wrapper {
+  display: inline;
+  min-width: 100%;
+}
+
+
+/* Properties and metadata styling */
+

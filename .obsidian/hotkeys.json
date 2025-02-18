@@ -676,15 +676,6 @@
       "key": "T"
     }
   ],
-  "obsidian-minimal-settings:toggle-minimal-focus-mode": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "F"
-    }
-  ],
   "hotkey-helper:browse-plugins": [],
   "hotkey-helper:open-hotkeys": [
     {

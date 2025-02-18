@@ -9,11 +9,10 @@
     "banner (1)",
     "hideproperties",
     "Custom properties - CSS styling",
-    "Line threading CSS snippet",
-    "My accent theme snippet"
+    "Line threading CSS snippet"
   ],
   "theme": "obsidian",
-  "cssTheme": "",
+  "cssTheme": "Minimal",
   "baseFontSize": 16,
   "showViewHeader": true,
   "nativeMenus": false,

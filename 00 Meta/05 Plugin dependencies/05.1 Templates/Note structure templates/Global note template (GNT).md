@@ -71,6 +71,7 @@ const TYPES_CONFIG = {
     template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Recipe and food - template.md",
     customMetadata: {
       up: "[[Recipes (MOC)]]",
+      ingredients: null,
       "prep-time": null,
       cuisine: null
     },
@@ -88,7 +89,6 @@ const TYPES_CONFIG = {
       priority: null,
       "outcome-goals": null,
       deadline: null,
-      priority: null
     },
     publishMode: "prompt"
   },
@@ -99,28 +99,50 @@ const TYPES_CONFIG = {
     publishMode: "always",
     subtypes: {
       book: {
-        type: "book",
-        template: "00 Meta/09 Archive/2024/Book review template.md",
-        renameRule: { rule: "suffix", value: " - Book" },
-        template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Mentions note - template.md",
+          type: "book",
+          template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Mentions note - template.md",
+          renameRule: { rule: "suffix", value: " - Book" },
       },
-      article: {},
-      website: {},
-      LLM: {},
-      podcast: {
+      article: { 
+          type: "article",
+          template: "",
+      },
+      website: { 
+          type: "website",
+          template: "",
+      },
+      LLM: { 
+          type: "LLM",
+          template: "",
+      },
+      podcast: { 
+          type: "podcast",
+          template: "",
           renameRule: { rule: "suffix", value: " - Podcast channel" } 
       },
-      podcast_episode: {
+      podcast_episode: { 
+          type: "podcast_episode",
+          template: "",
           renameRule: { rule: "suffix", value: " - Podcast episode" } 
       },
-      YouTube: {
+      YouTube: { 
+          type: "YouTube",
+          template: "",
           renameRule: { rule: "suffix", value: " - YouTube" } 
       },
       film: { 
+          type: "film",
+          template: "",
           renameRule: { rule: "suffix", value: " - Film" } 
       },
-      series: {},
-      author: {}
+      series: { 
+          type: "series",
+          template: "",
+          },
+      author:  {
+          type: "author",
+          template: "",
+      }
     },
     customMetadata: {
       author: null,
@@ -231,6 +253,7 @@ function buildYamlString(metadata) {
   // Helper to wrap any string value in double quotes
   function quoted(val) {
     // For simplicity, use JSON.stringify, which returns a valid JS string literal.
+    // e.g. [[Home]] => "[[Home]]"
     if (typeof val === "string") {
       return JSON.stringify(val);
     }

@@ -7,9 +7,9 @@
   "spellcheck": true,
   "mobileToolbarCommands": [
     "command-palette:open",
+    "switcher:open",
     "editor:toggle-source",
     "editor:configure-toolbar",
-    "snippet-commands-obsidian:snippet-command-Custom properties - hide properties",
     "theme:use-light",
     "theme:use-dark",
     "app:go-back",
@@ -28,10 +28,10 @@
     "editor:redo",
     "templater-obsidian:insert-templater",
     "templater-obsidian:replace-in-file-templater",
+    "quickadd:runQuickAdd",
     "templater-obsidian:jump-to-next-cursor-location",
     "app:delete-file",
-    "file-explorer:move-file",
-    "cmdr:open-commander-settings"
+    "file-explorer:move-file"
   ],
   "defaultViewMode": "source",
   "mobilePullAction": "command-palette:open",

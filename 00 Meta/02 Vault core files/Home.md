@@ -41,6 +41,6 @@ banner_y: 0.5
 > ![[Vault serendipity]]
 
 
-> [!NOTE] ![[Welcome - accent vault]]
+> [!NOTE] ![[README]]
 
 
