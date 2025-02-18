@@ -1,32 +1,3 @@
-# Set the default behavior to automatically normalize line endings.
 * text=auto
-
-# Explicitly declare text files you want to always normalize and convert to native line endings on checkout.
-*.c     text
-*.h     text
-*.cpp   text
-*.hpp   text
-*.txt   text
-*.md    text
-
-# Declare files that will always have CRLF line endings on checkout.
-*.bat   text eol=crlf
-
-# Declare files that will always have LF line endings on checkout.
-*.sh    text eol=lf
-
-# Binary files should be excluded from line ending normalization.
-*.png   binary
-*.jpg   binary
-*.jpeg  binary
-*.gif   binary
-*.ico   binary
-*.pdf   binary
-*.doc   binary
-*.docx  binary
-*.zip   binary
-*.tar   binary
-*.gz    binary
-*.mp3   binary
-*.mp4   binary
-*.avi   binary
+*.md text eol=lf
+*.json text eol=lf
