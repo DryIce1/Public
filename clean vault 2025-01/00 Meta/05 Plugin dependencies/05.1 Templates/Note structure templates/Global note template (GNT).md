@@ -83,7 +83,7 @@ const TYPES_CONFIG = {
     type: "project",
     subtypes: ["project/personal", "project/work", "project/community"],
     path: "40 Projects/" + await tp.date.now("YYYY/[Q]Q"),
-    template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Project template.md",
+    template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Project template - template.md",
     customMetadata: {
       quarter: "[[" + await tp.date.now("YYYY-[Q]Q") + "]]",
       priority: null,

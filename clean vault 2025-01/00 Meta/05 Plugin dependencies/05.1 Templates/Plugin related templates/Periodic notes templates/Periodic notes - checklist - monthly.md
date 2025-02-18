@@ -8,4 +8,4 @@
 ## Vaults - files & spaces
 - [ ] Empty Recycling Bin on Computer
 - [ ] Tidy up [[Interests]]
-- [ ] Review media in [[Books - datascope]] and [[Media collection - All media]]
+- [ ] Review media in [[Books]] and [[Media collection - All media]]

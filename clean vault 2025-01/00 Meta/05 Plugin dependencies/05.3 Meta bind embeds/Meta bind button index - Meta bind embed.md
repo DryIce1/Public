@@ -114,7 +114,7 @@ id: add-banner-Google-Photo-share-link
 style: default
 actions:
   - type: command
-    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/Google photo share link, paste to banner property - JS template.md
+    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/banner - google photo share link, paste to banner property - JS template.md
 ```
 
 ```meta-bind-button
@@ -127,5 +127,5 @@ id: add-banner-direct-image-URL
 style: default
 actions:
   - type: command
-    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/paste image URL to banner property - JS template.md
+    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/banner - paste image URL to banner property - JS template.md
 ```

@@ -1,6 +1,106 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-02-18",
+      "path": "20 My/21 Journal/2025/2025-02-18.md"
+    },
+    {
+      "basename": "file.name length",
+      "path": "00 Meta/05 Plugin dependencies/05.4 Dataview/file.name length.md"
+    },
+    {
+      "basename": "Dataview - advanced inline queries at a glance",
+      "path": "00 Meta/05 Plugin dependencies/05.4 Dataview/Dataview - advanced inline queries at a glance.md"
+    },
+    {
+      "basename": "Shortcuts widget - meta bind",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Shortcuts widget - meta bind.md"
+    },
+    {
+      "basename": "Periodic notes yearly note - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Periodic notes yearly note - meta bind embed.md"
+    },
+    {
+      "basename": "Periodic notes weekly note - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Periodic notes weekly note - meta bind embed.md"
+    },
+    {
+      "basename": "Periodic notes support pages - meta bind",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Periodic notes support pages - meta bind.md"
+    },
+    {
+      "basename": "Periodic notes quarterly note - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Periodic notes quarterly note - meta bind embed.md"
+    },
+    {
+      "basename": "Periodic notes navigation - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Periodic notes navigation - meta bind embed.md"
+    },
+    {
+      "basename": "Periodic notes monthly note - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Periodic notes monthly note - meta bind embed.md"
+    },
+    {
+      "basename": "Periodic notes daily note - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Periodic notes daily note - meta bind embed.md"
+    },
+    {
+      "basename": "Meta bind datascope - embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Meta bind datascope - embed.md"
+    },
+    {
+      "basename": "Meta bind button index - Meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Meta bind button index - Meta bind embed.md"
+    },
+    {
+      "basename": "Mentions note - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Mentions note - meta bind embed.md"
+    },
+    {
+      "basename": "Emotion tracker - meta bind embed",
+      "path": "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Emotion tracker - meta bind embed.md"
+    },
+    {
+      "basename": "Notes modified in the past 2 days",
+      "path": "00 Meta/03 Datascopes/Notes modified in the past 2 days.md"
+    },
+    {
+      "basename": "Book search plugin - Template",
+      "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Book search plugin - Template.md"
+    },
+    {
+      "basename": "Shortcuts widget - template",
+      "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Shortcuts widget - template.md"
+    },
+    {
+      "basename": "Project template - template",
+      "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Project template - template.md"
+    },
+    {
+      "basename": "Person note - template",
+      "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Person note - template.md"
+    },
+    {
+      "basename": "Mentions note - template",
+      "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Mentions note - template.md"
+    },
+    {
+      "basename": "Global note template (GNT)",
+      "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md"
+    },
+    {
+      "basename": "Doing the Work & Judge-Your-Neighbor DTW - template",
+      "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Doing the Work & Judge-Your-Neighbor DTW - template.md"
+    },
+    {
+      "basename": "Welcome - accent vault",
+      "path": "Welcome - accent vault.md"
+    },
+    {
+      "basename": "03 Datascopes (folder note)",
+      "path": "00 Meta/03 Datascopes/03 Datascopes (folder note).md"
+    },
+    {
       "basename": "Periodic notes template - daily note (archive 2024-01-02 - due to meta bind embed slowing down note navigation)",
       "path": "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes template - daily note (archive 2024-01-02 - due to meta bind embed slowing down note navigation).md"
     },
@@ -11,10 +111,6 @@
     {
       "basename": "Tasks",
       "path": "00 Meta/02 Vault core files/Tasks.md"
-    },
-    {
-      "basename": "2025-02-18",
-      "path": "20 My/21 Journal/2025/2025-02-18.md"
     }
   ],
   "omittedPaths": [],
