@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20 My/21 Journal/2025/2025-02-18.md",
+                "file": "00 Meta/02 Vault core files/Home.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-02-18"
+              "title": "Home"
             }
           }
         ]
@@ -124,7 +124,8 @@
               "title": "All properties"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "d6f08cba64653d4f",
@@ -137,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "20 My/21 Journal/2025/2025-02-18.md",
+                "file": "00 Meta/02 Vault core files/Home.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-02-18"
+              "title": "Outline of Home"
             }
           },
           {
@@ -195,7 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 340.5
   },
   "right": {
     "id": "8ff645647a393481",
@@ -249,8 +250,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5,
-    "collapsed": true
+    "width": 346.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,8 +269,9 @@
       "obsidian-book-search-plugin:Create new book note": false
     }
   },
-  "active": "2b92803696b60964",
+  "active": "38d763fe5b0c7642",
   "lastOpenFiles": [
+    "20 My/21 Journal/2025/2025-02-18.md",
     "00 Meta/05 Plugin dependencies/05.4 Dataview/file.name length.md",
     "00 Meta/05 Plugin dependencies/05.4 Dataview/Dataview - advanced inline queries at a glance.md",
     "00 Meta/05 Plugin dependencies/05.3 Meta bind embeds/Shortcuts widget - meta bind.md",
@@ -296,7 +297,6 @@
     "00 Meta/05 Plugin dependencies/05.1 Templates/Regex templates/Regex - Capitalise first letter of the line.md",
     "00 Meta/05 Plugin dependencies/05.1 Templates/Templater snippets/Current file metadata.md",
     "00 Meta/05 Plugin dependencies/05.1 Templates/Templater snippets/Count Files in Folder - Dataview snippet.md",
-    "00 Meta/05 Plugin dependencies/05.1 Templates/Templater snippets/Templater tag suggester.md",
     "00 Meta/05 Plugin dependencies/06.1 Templates/Note structure templates",
     "00 Meta/05 Plugin dependencies/06.1 Templates/JS templates",
     "00 Meta/05 Plugin dependencies/06.1 Templates",
