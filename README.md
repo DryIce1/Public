@@ -1,2 +1,2 @@
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20Me-yellow?style=flat-square&logo=buymeacoffee)](https://www.buymeacoffee.com/dryice)
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="dryice" data-description="Support me on Buy me a coffee!" data-message="Thank you for supporting my work. I hope you have fun exploring." data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
