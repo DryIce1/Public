@@ -124,8 +124,7 @@
               "title": "All properties"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "d6f08cba64653d4f",
@@ -269,7 +268,7 @@
       "obsidian-book-search-plugin:Create new book note": false
     }
   },
-  "active": "38d763fe5b0c7642",
+  "active": "2b92803696b60964",
   "lastOpenFiles": [
     "20 My/21 Journal/2025/2025-02-18.md",
     "00 Meta/05 Plugin dependencies/05.4 Dataview/file.name length.md",
