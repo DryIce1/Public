@@ -1,0 +1,20 @@
+{
+  "folder": "10 Sources",
+  "fileNameFormat": "{{title}} ({{author}}) - Book",
+  "frontmatter": "",
+  "content": "",
+  "useDefaultFrontmatter": true,
+  "defaultFrontmatterKeyType": "Camel Case",
+  "templateFile": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Book search plugin - Template.md",
+  "serviceProvider": "google",
+  "naverClientId": "",
+  "naverClientSecret": "",
+  "localePreference": "en-au",
+  "apiKey": "",
+  "openPageOnCompletion": true,
+  "showCoverImageInSearch": true,
+  "enableCoverImageSave": false,
+  "enableCoverImageEdgeCurl": true,
+  "coverImagePath": "",
+  "askForLocale": false
+}

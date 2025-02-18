@@ -1,0 +1,423 @@
+{
+  "choices": [
+    {
+      "id": "bb18d081-2199-45d1-885b-72cdc4450ee9",
+      "name": "Action ",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "dbb10697-2ea6-40c9-8cfc-7645869919c2",
+          "name": "Capture - task to daily note",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "20 My/21 Journal/{{DATE:YYYY}}/{{DATE}}.md",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": true,
+            "template": "00 Meta/060 Templates/Core templates/Periodic note template - daily note.md"
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [ ] #task {{VALUE:Capture task}} {{VALUE: ,⏫,🔼,🔽}} ➕ {{DATE}} 📅 {{VALUE:{{Date}},{{DATE+1}}, ,{{DATE+2}},{{DATE+3}},{{DATE+4}},{{DATE+5}},{{DATE+6}},{{DATE+7}},{{DATE+30}}}} 🆔 {{DATE: yyyyMMDDHHmmss}}"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": true,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "bottom"
+          },
+          "prepend": true,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default"
+        },
+        {
+          "id": "7ed96073-4b07-4d8b-bf6c-f9f1cd35dbd5",
+          "name": "Capture - bullet point (and log time) daily note",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "20 My/21 Journal/{{DATE:YYYY}}/{{DATE}}.md",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": true,
+            "template": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Periodic note template - daily note.md"
+          },
+          "format": {
+            "enabled": true,
+            "format": "- {{DATE:HH:mm}} - {{VALUE: Capture bullet point}}"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": true,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "bottom"
+          },
+          "prepend": true,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default"
+        },
+        {
+          "id": "30ad38a6-40c4-4e13-b4f2-b49c6115151a",
+          "name": "Capture - items to Shopping List 🛒",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "20 My/Shopping list.md",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [ ] {{VALUE:Add item to shopping list}} ({{DATE:YYYY-MM-DD-HH:mm}}) "
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "prepend": true,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default"
+        },
+        {
+          "id": "fdffb5ff-9bbf-4848-8de1-5c81e166c185",
+          "name": "Capture - idea to \"Obsidian vault roadmap...\" note",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "00 Meta/01 Guidance/Obsidian vault development, log and roadmap.md",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [ ] {{value:Add item or task to \"Obsidian vault development log and roadmap\" note}} ({{DATE:YYYY-MM-DD}})\\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "# Ideas and improvements",
+            "insertAtEnd": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "prepend": false,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default"
+        },
+        {
+          "id": "25612606-2a0a-42c6-b98d-6bcd07dc5e6b",
+          "name": "Capture - idea to Brain dump note",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "20 My/Brain dump.md",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- {{VALUE:Capture to brain dump}} ({{DATE:YYYY-MM-DD-HHmm}})"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "prepend": true,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default"
+        },
+        {
+          "id": "c8797d75-74e5-4dbc-bf53-92004ceb2af5",
+          "name": "Template - Create \"Doing the work\" with link (DTW)",
+          "type": "Template",
+          "command": false,
+          "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Doing the Work & Judge-Your-Neighbor DTW - template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "Doing the work - {{DATE:YYYY-MM-DD-HHmm}} - {{value:What thought or situation are you reflecting on today?}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "20 My/22 Reflections"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false
+          },
+          "appendLink": true,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": false
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "setFileExistsBehavior": true,
+          "fileExistsMode": "Increment the file name"
+        },
+        {
+          "id": "3ac66889-f723-4409-b471-31ccb01e0f65",
+          "name": "Template - create emotion picker note",
+          "type": "Template",
+          "command": false,
+          "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Emotion picker template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "Emotion - {{DATE:YYYY-MM-DD-HHmm}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "20 My/21 Journal/Emotion tracker"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": false
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": true
+        }
+      ]
+    },
+    {
+      "id": "b8b7e16b-6d48-4d2a-8a93-2cb6023202b5",
+      "name": "Navigation",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "0fdf0fac-5817-4735-95b0-fa31814edd78",
+          "name": "Periodic notes - open today's daily note",
+          "type": "Macro",
+          "command": false,
+          "macroId": "61a3a325-0c7c-4071-89f4-56fe247dced4"
+        },
+        {
+          "id": "85cd794e-7036-4d3c-a992-dba7fdd9c0dc",
+          "name": "Periodic notes - open switcher",
+          "type": "Macro",
+          "command": false,
+          "macroId": "9dca15f0-eb74-481a-a4c0-0a66806f7d9f"
+        },
+        {
+          "id": "90904c0b-3736-4c56-a628-6b49d28c506d",
+          "name": "Global note template - run GNT",
+          "type": "Macro",
+          "command": false,
+          "macroId": "548ac1d9-086d-48e3-bd12-1fb805914cb5"
+        },
+        {
+          "id": "0a7e260d-5157-4233-b70a-0728a7b38e4c",
+          "name": "Global note template - create new note ",
+          "type": "Macro",
+          "command": true,
+          "macroId": "cb0821c1-f067-4274-96bc-4a8297ae3711"
+        },
+        {
+          "id": "a629d660-9f5c-41a2-86fc-9ffc75c10daf",
+          "name": "Home",
+          "type": "Macro",
+          "command": false,
+          "macroId": "37afe576-4749-487d-8409-bb8dc9643bae"
+        },
+        {
+          "id": "f4f7269e-f01f-4881-b0b6-4482ae4bba54",
+          "name": "Tasks ",
+          "type": "Macro",
+          "command": false,
+          "macroId": "a5473315-f339-4273-b54d-71de0f9a5533"
+        }
+      ],
+      "collapsed": false
+    }
+  ],
+  "macros": [
+    {
+      "name": "Navigation ",
+      "id": "3ee142d1-0e8e-4cd0-bdc6-2a2ea636c68f",
+      "commands": [],
+      "runOnStartup": false
+    },
+    {
+      "name": "Periodic notes - open today's daily note",
+      "id": "61a3a325-0c7c-4071-89f4-56fe247dced4",
+      "commands": [
+        {
+          "name": "Periodic Notes: Open today's daily note",
+          "type": "Obsidian",
+          "id": "ce19b3e0-8614-4e6d-88d2-4cfd82c35704",
+          "commandId": "periodic-notes:open-daily-note"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "0a185382-33bf-4e7a-bf39-cea79fe8b3c5",
+          "time": 500
+        },
+        {
+          "name": "Templater: Replace templates in the active file",
+          "type": "Obsidian",
+          "id": "e05e0293-c118-49e2-9a4e-be3247022975",
+          "commandId": "templater-obsidian:replace-in-file-templater"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Periodic notes - open switcher",
+      "id": "9dca15f0-eb74-481a-a4c0-0a66806f7d9f",
+      "commands": [
+        {
+          "name": "Periodic Notes: Show date switcher...",
+          "type": "Obsidian",
+          "id": "239e368d-b9e1-496f-a17e-d078d08cdd60",
+          "commandId": "periodic-notes:show-date-switcher"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Global note template - run GNT",
+      "id": "548ac1d9-086d-48e3-bd12-1fb805914cb5",
+      "commands": [
+        {
+          "name": "Templater: Insert 00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md",
+          "type": "Obsidian",
+          "id": "f8bd4e9d-0aae-43cc-94d5-899df7258eff",
+          "commandId": "templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Global note template - create new note",
+      "id": "cb0821c1-f067-4274-96bc-4a8297ae3711",
+      "commands": [
+        {
+          "name": "Create new note in current tab",
+          "type": "Obsidian",
+          "id": "deb9ccdc-9ef7-48f2-80ee-e4562078b6e4",
+          "commandId": "file-explorer:new-file-in-current-tab"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "1b77fc52-a909-4907-97f8-6817112da47e",
+          "time": 300
+        },
+        {
+          "name": "Templater: Insert 00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md",
+          "type": "Obsidian",
+          "id": "966fe8c5-435b-43df-bc79-8c33690f7236",
+          "commandId": "templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Home",
+      "id": "37afe576-4749-487d-8409-bb8dc9643bae",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open 00 Meta/02 Vault core files/Home",
+          "type": "Obsidian",
+          "id": "3286bdad-284d-4a2b-b09c-367c70fa0122",
+          "commandId": "obsidian-hotkeys-for-specific-files:00 Meta/02 Vault core files/Home.md"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Tasks ",
+      "id": "a5473315-f339-4273-b54d-71de0f9a5533",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open 00 Meta/02 Vault core files/Tasks",
+          "type": "Obsidian",
+          "id": "3fbeddf3-a6ac-431c-b577-0cc525b9c956",
+          "commandId": "obsidian-hotkeys-for-specific-files:00 Meta/02 Vault core files/Tasks.md"
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "00 Meta/05 Plugin dependencies/05.1 Templates",
+  "announceUpdates": true,
+  "version": "1.11.5",
+  "disableOnlineFeatures": false,
+  "enableRibbonIcon": false,
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "00 Meta/05 Plugin dependencies/05.5 QuickAdd AI Assistant prompts",
+    "showAssistant": true,
+    "providers": []
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true
+  }
+}

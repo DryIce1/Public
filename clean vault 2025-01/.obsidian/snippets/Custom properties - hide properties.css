@@ -1,0 +1,55 @@
+
+/* HIDE PROPERTIES BY DEFAULT */
+/* this snippet hides all properties except permited properties listed below */
+
+
+.metadata-property{
+  display: none;
+  /* display: none !important */
+}
+
+/* DISPLAY PERMITTED CUSTOM PROPERTIES */
+/* these properties are always displayed when this snippet is on */
+.metadata-property:is(
+
+  [data-property-key=""],
+  [data-property-key="up"],
+  [data-property-key="related"], 
+  [data-property-key="date created"],
+  [data-property-key="banner"],
+  [data-property-key="url"],
+
+  /* periodic notes */
+  [data-property-key="yesterday"],
+  [data-property-key="week"],
+  [data-property-key="month"],
+  [data-property-key="year"],
+
+/* properties associated with note type */
+  [data-property-key="source"],
+  [data-property-key="tags"], 
+  [data-property-key="aliases"], 
+  [data-property-key="status"],
+  [data-property-key="type"],
+  [data-property-key="priority"],
+  [data-property-key="rating"],
+  [data-property-key="author"],
+
+/* Journalling */
+  [data-property-key="sleep"],
+  [data-property-key="awake"],
+  [data-property-key="sleep-comments"],
+  [data-property-key="gratitude"],
+  [data-property-key="highlights"],
+  [data-property-key="lessons-learned"],
+  [data-property-key="next-plans"],
+  [data-property-key="work-comments"],
+  
+  ) {
+      display: inherit;
+
+  }
+
+    /* .metadata-add-button {
+    display: none;
+  } */

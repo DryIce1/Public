@@ -1,0 +1,44 @@
+---
+date-created: 2024-11-22
+---
+
+- **theme**
+    - monthly :  `=link(dateformat(date(this.date-created), "yyyy-MM")).theme`
+    - yearly :  `=link(dateformat(date(this.date-created), "yyyy")).theme`
+    - 5-yearly : `=link((floor(date(this.date-created).year / 5) * 5) + "-" + (floor(date(this.date-created).year / 5) * 5 + 4)).theme`
+- **intentions**
+    - daily : `=link(dateformat(date(this.date-created), "yyyy-MM-dd")).intentions`
+    - weekly : `=link(dateformat(date(this.date-created), "yyyy-'W'WW")).intentions`
+    - monthly : `=link(dateformat(date(this.date-created), "yyyy-MM")).intentions`
+    - yearly : `=link(dateformat(date(this.date-created), "yyyy")).intentions`
+    - 5-yearly : `=link((floor(date(this.date-created).year / 5) * 5) + "-" + (floor(date(this.date-created).year / 5) * 5 + 4)).intentions`
+- **sleep comments**
+    - daily : `=link(dateformat(date(this.date-created), "yyyy-MM-dd")).sleep-comments`
+    - weekly : `=link(dateformat(date(this.date-created), "yyyy-'W'WW")).sleep-comments`
+    - monthly : `=link(dateformat(date(this.date-created), "yyyy-MM")).sleep-comments`
+    - yearly : `=link(dateformat(date(this.date-created), "yyyy")).sleep-comments`
+    - 5-yearly : `=link((floor(date(this.date-created).year / 5) * 5) + "-" + (floor(date(this.date-created).year / 5) * 5 + 4)).sleep-comments`
+- **gratitude**
+    - daily : `=link(dateformat(date(this.date-created), "yyyy-MM-dd")).gratitude`
+    - weekly : `=link(dateformat(date(this.date-created), "yyyy-'W'WW")).gratitude`
+    - monthly : `=link(dateformat(date(this.date-created), "yyyy-MM")).gratitude`
+    - yearly : `=link(dateformat(date(this.date-created), "yyyy")).gratitude`
+    - 5-yearly : `=link((floor(date(this.date-created).year / 5) * 5) + "-" + (floor(date(this.date-created).year / 5) * 5 + 4)).gratitude`
+- **highlights**
+    - daily : `=link(dateformat(date(this.date-created), "yyyy-MM-dd")).highlights`
+    - weekly : `=link(dateformat(date(this.date-created), "yyyy-'W'WW")).highlights`
+    - monthly : `=link(dateformat(date(this.date-created), "yyyy-MM")).highlights`
+    - yearly : `=link(dateformat(date(this.date-created), "yyyy")).highlights`
+    - 5-yearly : `=link((floor(date(this.date-created).year / 5) * 5) + "-" + (floor(date(this.date-created).year / 5) * 5 + 4)).highlights`
+- **lessons learned**
+    - daily : `=link(dateformat(date(this.date-created), "yyyy-MM-dd")).lessons-learned`
+    - weekly : `=link(dateformat(date(this.date-created), "yyyy-'W'WW")).lessons-learned`
+    - monthly : `=link(dateformat(date(this.date-created), "yyyy-MM")).lessons-learned`
+    - yearly : `=link(dateformat(date(this.date-created), "yyyy")).lessons-learned`
+    - 5-yearly : `=link((floor(date(this.date-created).year / 5) * 5) + "-" + (floor(date(this.date-created).year / 5) * 5 + 4)).lessons-learned`
+- **next-plans**
+    - daily : `=link(dateformat(date(this.date-created), "yyyy-MM-dd")).next-plans`
+    - weekly : `=link(dateformat(date(this.date-created), "yyyy-'W'WW")).next-plans`
+    - monthly : `=link(dateformat(date(this.date-created), "yyyy-MM")).next-plans`
+    - yearly : `=link(dateformat(date(this.date-created), "yyyy")).next-plans`
+    - 5-yearly : `=link((floor(date(this.date-created).year / 5) * 5) + "-" + (floor(date(this.date-created).year / 5) * 5 + 4)).next-plans`

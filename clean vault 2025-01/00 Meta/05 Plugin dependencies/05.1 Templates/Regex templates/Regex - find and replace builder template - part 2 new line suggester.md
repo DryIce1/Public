@@ -1,0 +1,1 @@
+const <% await tp.system.prompt("1: New regex definition")%> = <% await tp.system.prompt("2: previous line definition")%>.replace(/<% await tp.system.prompt("3: Find regex")%>/g, "<% await tp.system.prompt("4: Replace regex")%>")

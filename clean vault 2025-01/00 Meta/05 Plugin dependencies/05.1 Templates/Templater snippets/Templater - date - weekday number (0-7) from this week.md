@@ -1,0 +1,1 @@
+<% tp.date.weekday("dddd, YYYY-MM-DD", 7) %>

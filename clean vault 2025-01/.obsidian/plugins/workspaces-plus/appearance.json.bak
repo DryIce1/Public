@@ -1,0 +1,21 @@
+{
+  "accentColor": "#1b1918",
+  "enabledCssSnippets": [
+    "home-css",
+    "indented headers",
+    "MCL Multi Column",
+    "Minimal dataview table cards view",
+    "MCL Wide Views",
+    "banner (1)",
+    "hideproperties",
+    "My accent theme snippet",
+    "Custom properties - CSS styling"
+  ],
+  "theme": "moonstone",
+  "cssTheme": "",
+  "baseFontSize": 18,
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "monospaceFontFamily": "Inter",
+  "showRibbon": false
+}

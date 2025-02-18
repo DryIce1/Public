@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "path": "00 Meta/02 Vault core files/Home.md",
+      "ctime": 1681600634448
+    },
+    {
+      "type": "file",
+      "path": "00 Meta/02 Vault core files/Home dashboard.canvas",
+      "ctime": 1681600634448
+    },
+    {
+      "type": "file",
+      "path": "20 My/22 Reflections/Behavioural Activation For Depression.md",
+      "ctime": 1681600634448
+    },
+    {
+      "type": "group",
+      "ctime": 1733001386916,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1733002253737,
+          "path": "30 Notes/Global note template GNT - development page.md",
+          "title": ""
+        },
+        {
+          "type": "file",
+          "ctime": 1739808712322,
+          "path": "00 Meta/01 Guidance/Obsidian vault development, log and roadmap.md"
+        }
+      ],
+      "title": "Obsidian related"
+    }
+  ]
+}

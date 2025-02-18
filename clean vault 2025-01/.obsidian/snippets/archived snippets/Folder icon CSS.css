@@ -1,0 +1,22 @@
+// Add Folder Icons
+const FILE_EXPLORER_ICON_MAP = [
+  ["00 Meta", "archive"],
+  ["@Inbox", "inbox"],
+  ["Media", "hard-drive"],
+  ["Journal", "book"],
+  ["Relations", "users-2"],
+  ["Vault", "pyramid"],
+  ["Listes", "clipboard-list"],
+  ["PKM", "boxes"],
+  ["Hobbies", "flower"],
+  ["Admin", "vault"],
+  ["Privé", "lock"],
+  ["Work", "pickaxe"]
+]
+for (const [path, icon] of FILE_EXPLORER_ICON_MAP) {
+  const el = document.querySelector(`.nav-folder-title[data-path='${path}']`)
+  const iconDiv = document.createElement("div")
+  iconDiv.classList.add("lucide-icon")
+  tp.obsidian.setIcon(iconDiv, icon)
+  el.lastChild.insertAdjacentElement("beforebegin", iconDiv)
+}

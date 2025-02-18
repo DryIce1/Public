@@ -1,0 +1,79 @@
+{
+  "installedVersion": "1.0.0-beta1",
+  "activeCalendarSet": "Default",
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": true,
+  "hasMigratedWeeklyNoteSettings": false,
+  "calendarSets": [
+    {
+      "day": {
+        "enabled": true,
+        "format": "YYYY/YYYY-MM-DD",
+        "folder": "20 My/21 Journal",
+        "openAtStartup": false,
+        "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes template - daily note.md"
+      },
+      "week": {
+        "enabled": true,
+        "format": "YYYY/YYYY-[W]WW",
+        "folder": "20 My/21 Journal",
+        "openAtStartup": false,
+        "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes template - weekly note.md"
+      },
+      "month": {
+        "enabled": true,
+        "format": "YYYY/YYYY-MM",
+        "folder": "20 My/21 Journal",
+        "openAtStartup": false,
+        "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes template - monthly note.md"
+      },
+      "quarter": {
+        "enabled": true,
+        "format": "YYYY/YYYY-[Q]Q",
+        "folder": "20 My/21 Journal",
+        "openAtStartup": false,
+        "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes template - quarterly note.md"
+      },
+      "year": {
+        "enabled": true,
+        "format": "YYYY/YYYY",
+        "folder": "20 My/21 Journal",
+        "openAtStartup": false,
+        "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes template - yearly note.md"
+      },
+      "id": "Default",
+      "ctime": "2024-10-10T15:45:22+02:00"
+    }
+  ],
+  "enableTimelineComplication": true,
+  "daily": {
+    "format": "YYYY/YYYY-MM-DD",
+    "folder": "20 My/21 Journal",
+    "template": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Periodic note template - daily note.md",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "YYYY/YYYY-[W]WW",
+    "template": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Periodic note template - weekly note.md",
+    "folder": "20 My/21 Journal",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "YYYY/YYYY-MM",
+    "template": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Periodic note template - monthly note.md",
+    "folder": "20 My/21 Journal",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "YYYY/YYYY-[Q]Q",
+    "template": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Periodic note template - quarterly note.md",
+    "folder": "20 My/21 Journal",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "YYYY/YYYY",
+    "template": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Periodic note template - yearly note.md",
+    "folder": "20 My/21 Journal",
+    "enabled": true
+  }
+}

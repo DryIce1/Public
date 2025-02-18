@@ -1,0 +1,103 @@
+{
+  "globalQuery": "path regex does not match /Meta/\nlimit 150",
+  "globalFilter": "#task",
+  "removeGlobalFilter": true,
+  "taskFormat": "tasksPluginEmoji",
+  "setCreatedDate": true,
+  "setDoneDate": true,
+  "setCancelledDate": true,
+  "autoSuggestInEditor": true,
+  "autoSuggestMinMatch": 2,
+  "autoSuggestMaxItems": 7,
+  "provideAccessKeys": true,
+  "useFilenameAsScheduledDate": false,
+  "filenameAsScheduledDateFormat": "",
+  "filenameAsDateFolders": [],
+  "recurrenceOnNextLine": false,
+  "statusSettings": {
+    "coreStatuses": [
+      {
+        "symbol": " ",
+        "name": "Todo",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "TODO"
+      },
+      {
+        "symbol": "x",
+        "name": "Done",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": true,
+        "type": "DONE"
+      }
+    ],
+    "customStatuses": [
+      {
+        "symbol": "/",
+        "name": "In progress",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "IN_PROGRESS"
+      },
+      {
+        "symbol": "-",
+        "name": "Canceled",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": false,
+        "type": "CANCELLED"
+      },
+      {
+        "symbol": "<",
+        "name": "Calendar appointment",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": false,
+        "type": "DONE"
+      },
+      {
+        "symbol": ">",
+        "name": "Waiting for / Delegated",
+        "nextStatusSymbol": "/",
+        "availableAsCommand": false,
+        "type": "IN_PROGRESS"
+      },
+      {
+        "symbol": "s",
+        "name": "Someday Maybe",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": false,
+        "type": "CANCELLED"
+      },
+      {
+        "symbol": "n",
+        "name": "Next action",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": false,
+        "type": "TODO"
+      }
+    ]
+  },
+  "features": {
+    "INTERNAL_TESTING_ENABLED_BY_DEFAULT": true
+  },
+  "generalSettings": {},
+  "headingOpened": {
+    "Core Statuses": true,
+    "Custom Statuses": true
+  },
+  "debugSettings": {
+    "ignoreSortInstructions": false,
+    "showTaskHiddenData": false,
+    "recordTimings": false
+  },
+  "loggingOptions": {
+    "minLevels": {
+      "": "info",
+      "tasks": "info",
+      "tasks.Cache": "info",
+      "tasks.Events": "info",
+      "tasks.File": "info",
+      "tasks.Query": "info",
+      "tasks.Task": "info"
+    }
+  }
+}

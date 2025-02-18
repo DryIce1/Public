@@ -1,0 +1,165 @@
+{
+  "apiProvider": "all",
+  "pexelsApiKey": "",
+  "pixabayApiKey": "",
+  "flickrApiKey": "",
+  "unsplashApiKey": "",
+  "imageSize": "medium",
+  "imageOrientation": "landscape",
+  "numberOfImages": 10,
+  "defaultKeywords": "nature, abstract, landscape, technology, art, cityscape, wildlife, ocean, mountains, forest, space, architecture, food, travel, science, music, sports, fashion, business, education, health, culture, history, weather, transportation, industry, people, animals, plants, patterns",
+  "yPosition": 50,
+  "xPosition": 50,
+  "customBannerField": [
+    "banner"
+  ],
+  "customYPositionField": [
+    "banner-y"
+  ],
+  "customXPositionField": [
+    "banner-x"
+  ],
+  "customContentStartField": [
+    "content-start"
+  ],
+  "customImageDisplayField": [
+    "banner-display"
+  ],
+  "customImageRepeatField": [
+    "banner-repeat"
+  ],
+  "customBannerHeightField": [
+    "banner-height"
+  ],
+  "customFadeField": [
+    "banner-fade"
+  ],
+  "customBorderRadiusField": [
+    "banner-radius"
+  ],
+  "customTitleColorField": [
+    "banner-inline-title-color"
+  ],
+  "customBannerShuffleField": [
+    "banner-shuffle"
+  ],
+  "customBannerIconField": [
+    "icon"
+  ],
+  "customBannerIconSizeField": [
+    "icon-size"
+  ],
+  "customBannerIconXPositionField": [
+    "icon-x"
+  ],
+  "customBannerIconOpacityField": [
+    "icon-opacity"
+  ],
+  "customBannerIconColorField": [
+    "icon-color"
+  ],
+  "customBannerIconFontWeightField": [
+    "icon-font-weight"
+  ],
+  "customBannerIconBackgroundColorField": [
+    "icon-bg-color"
+  ],
+  "customBannerIconPaddingXField": [
+    "icon-padding-x"
+  ],
+  "customBannerIconPaddingYField": [
+    "icon-padding-y"
+  ],
+  "customBannerIconBorderRadiusField": [
+    "icon-border-radius"
+  ],
+  "customBannerIconVeritalOffsetField": [
+    "icon-y"
+  ],
+  "folderImages": [
+    {
+      "folder": "10 Sources",
+      "image": "https://i.imgur.com/IK14Rr9.png",
+      "yPosition": 0,
+      "contentStartPosition": 250,
+      "imageDisplay": "contain",
+      "imageRepeat": false,
+      "directChildrenOnly": false,
+      "fade": -65
+    },
+    {
+      "folder": "20 My",
+      "image": "https://i.imgur.com/S81Z7HJ.jpeg",
+      "yPosition": 0,
+      "contentStartPosition": 350,
+      "titleColor": "var(--inline-title-color)",
+      "fade": -65,
+      "imageDisplay": "cover",
+      "imageRepeat": false,
+      "directChildrenOnly": false,
+      "bannerHeight": 450
+    },
+    {
+      "folder": "30 Notes",
+      "image": "https://i.imgur.com/BfN9jFb.jpeg",
+      "yPosition": 0,
+      "contentStartPosition": 250,
+      "imageDisplay": "contain",
+      "imageRepeat": false,
+      "directChildrenOnly": false,
+      "fade": -65
+    },
+    {
+      "folder": "40 Projects",
+      "image": "https://i.imgur.com/BfN9jFb.jpeg",
+      "imageDisplay": "contain",
+      "imageRepeat": false,
+      "yPosition": 50,
+      "xPosition": 50,
+      "contentStartPosition": 250,
+      "fade": -65,
+      "titleColor": "var(--inline-title-color)",
+      "directChildrenOnly": false,
+      "enableImageShuffle": false,
+      "shuffleFolder": ""
+    }
+  ],
+  "contentStartPosition": 250,
+  "imageDisplay": "cover",
+  "imageRepeat": false,
+  "bannerHeight": 350,
+  "fade": -75,
+  "bannerFadeInAnimationDuration": 300,
+  "borderRadius": 25,
+  "showPinIcon": true,
+  "pinnedImageFolder": "pixel-banner-images",
+  "showReleaseNotes": true,
+  "lastVersion": "2.21.2",
+  "showRefreshIcon": true,
+  "showViewImageIcon": true,
+  "showSetTargetXYPosition": true,
+  "hidePixelBannerFields": false,
+  "hidePropertiesSectionIfOnlyBanner": false,
+  "titleColor": "var(--inline-title-color)",
+  "enableImageShuffle": false,
+  "hideEmbeddedNoteTitles": true,
+  "hideEmbeddedNoteBanners": true,
+  "showSelectImageIcon": false,
+  "defaultSelectImagePath": "",
+  "useShortPath": true,
+  "bannerGap": 2,
+  "bannerIconSize": 70,
+  "bannerIconXPosition": 0,
+  "bannerIconOpacity": 100,
+  "bannerIconColor": "",
+  "bannerIconFontWeight": "normal",
+  "bannerIconBackgroundColor": "",
+  "bannerIconPaddingX": "0",
+  "bannerIconPaddingY": "0",
+  "bannerIconBorderRadius": "17",
+  "bannerIconVeritalOffset": -100,
+  "customBannerIconPaddingField": [
+    "icon-padding"
+  ],
+  "bannerIconPadding": "0"
+}

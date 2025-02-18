@@ -1,0 +1,30 @@
+{
+  "collapse-filter": false,
+  "search": "-path:\"00 Meta\"  ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"20 My/21 Journal\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.0939292790284699,
+  "close": false
+}

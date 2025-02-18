@@ -1,0 +1,12 @@
+---
+days:
+  - "[[2024-11-18]]"
+  - "[[2024-11-19]]"
+  - "[[2024-11-20]]"
+  - "[[2024-11-21]]"
+  - "[[2024-11-22]]"
+  - "[[2024-11-23]]"
+  - "[[2024-11-24]]"
+---
+- where days of the week in metadata have sleep-duration metadata 
+    - `=round(sum(filter(this.days.sleep-duration, (p) => p)) / length(filter(this.days.sleep-duration, (p) => p)), 2) + " hours"`

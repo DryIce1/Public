@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-reset-font-size",
+	"name": "Reset Font Size",
+	"version": "1.0.2",
+	"minAppVersion": "0.14.6",
+	"description": "Adds button and command to reset the font size back to its default value.",
+	"author": "luckman212",
+	"authorUrl": "https://github.com/luckman212/obsidian-reset-font-size",
+	"isDesktopOnly": false
+}

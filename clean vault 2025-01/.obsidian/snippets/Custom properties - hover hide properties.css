@@ -1,0 +1,24 @@
+
+.markdown-preview-view, .markdown-source-view { /* Both edit and preview mode */
+    .metadata-container {             
+        /* Default theme : max height when not hovered */
+            /* min-height: 2.7em; */
+            /* max-height: 2.7em; */
+        /* my theme and custom properties snippet : max height when not hovered*/ 
+        min-height: 7.6em;
+        max-height: 7.6em;
+        opacity: 0.6;             
+        overflow: hidden;             
+        transition: max-height 250ms ease-in-out, opacity 250ms;
+        margin-bottom: 0;         
+    }
+
+    .metadata-container:hover,
+    .metadata-container:focus-within {
+        min-height: 25em;
+        /* Enable scrolling if content exceeds max-height */
+            overflow-y: auto; 
+        opacity: 1;
+        transition: max-height 300ms ease-in-out, opacity 300ms;
+    }
+}

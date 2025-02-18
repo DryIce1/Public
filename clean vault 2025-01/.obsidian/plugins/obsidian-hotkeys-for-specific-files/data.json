@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "useMoment": false,
+      "file": "00 Meta/02 Vault core files/Tasks.md"
+    },
+    {
+      "useMoment": false,
+      "file": "00 Meta/02 Vault core files/Home.md"
+    }
+  ],
+  "useExistingPane": true,
+  "useHoverEditor": false
+}

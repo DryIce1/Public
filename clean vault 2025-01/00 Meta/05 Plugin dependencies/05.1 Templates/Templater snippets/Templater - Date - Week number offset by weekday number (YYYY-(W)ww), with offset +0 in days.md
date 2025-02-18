@@ -1,0 +1,1 @@
+<%tp.date.weekday("YYYY-[W]WW", +3)%>

@@ -1,0 +1,42 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "00 Meta/05 Plugin dependencies/05.1 Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": false,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": true,
+  "shell_path": "",
+  "user_scripts_folder": "00 Meta/05 Plugin dependencies/05.2 Scripts",
+  "enable_folder_templates": false,
+  "folder_templates": [
+    {
+      "folder": "",
+      "template": ""
+    }
+  ],
+  "enable_file_templates": true,
+  "file_templates": [
+    {
+      "regex": "",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": true,
+  "enabled_templates_hotkeys": [
+    "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/Google photo share link, paste to banner property - JS template.md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/paste image URL to banner property - JS template.md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - weekly.md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - monthly.md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - yearly - last year.md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - yearly - next year.md"
+  ],
+  "startup_templates": [],
+  "enable_ribbon_icon": false
+}

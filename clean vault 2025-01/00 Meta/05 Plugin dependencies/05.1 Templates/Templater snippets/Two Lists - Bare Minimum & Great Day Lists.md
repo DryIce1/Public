@@ -1,0 +1,4 @@
+- **The Bare Minimum List**
+    - [ ] <%tp.file.cursor(0)%>
+- **The Great Day List**
+    - [ ] 

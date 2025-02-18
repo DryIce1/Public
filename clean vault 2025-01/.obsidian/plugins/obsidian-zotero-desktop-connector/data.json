@@ -1,0 +1,27 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "10 Sources/11 Inbox",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "Citation Format #1",
+      "format": "formatted-citation",
+      "cslStyle": "elsevier-harvard-without-titles"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Zotero import template #1",
+      "outputPathTemplate": "{{title}}.md",
+      "imageOutputPathTemplate": "00 Meta/04 Attachments/04.6 Attachments - Zotero Integration Image Import/{{citekey}}/",
+      "imageBaseNameTemplate": "{{citekey}} ",
+      "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Zotero integration plugin - import template.md"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "first-imported-note",
+  "shouldConcat": true
+}

@@ -1,0 +1,1 @@
+> [!image-description] <%tp.file.cursor(1)%>

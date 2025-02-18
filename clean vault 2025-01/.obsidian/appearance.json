@@ -1,0 +1,22 @@
+{
+  "accentColor": "#b57b17",
+  "enabledCssSnippets": [
+    "home-css",
+    "indented headers",
+    "MCL Multi Column",
+    "Minimal dataview table cards view",
+    "MCL Wide Views",
+    "banner (1)",
+    "hideproperties",
+    "Custom properties - CSS styling",
+    "Line threading CSS snippet",
+    "My accent theme snippet"
+  ],
+  "theme": "obsidian",
+  "cssTheme": "",
+  "baseFontSize": 16,
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "monospaceFontFamily": "Inter",
+  "showRibbon": false
+}

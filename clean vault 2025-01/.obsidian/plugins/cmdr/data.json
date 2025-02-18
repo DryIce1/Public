@@ -1,0 +1,113 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "quickadd:choice:3ac66889-f723-4409-b471-31ccb01e0f65",
+      "icon": "thermometer-sun",
+      "name": "Emotion picker template",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "quickadd:choice:bb18d081-2199-45d1-885b-72cdc4450ee9",
+      "icon": "lucide-activity",
+      "name": "QuickAdd Action",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:b8b7e16b-6d48-4d2a-8a93-2cb6023202b5",
+      "icon": "lucide-compass",
+      "name": "QuickAdd Navigation",
+      "mode": "any"
+    }
+  ],
+  "macros": [
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md"
+        }
+      ],
+      "name": "GNT",
+      "icon": "lucide-file-plus",
+      "startup": false
+    }
+  ],
+  "explorer": [],
+  "hide": {
+    "statusbar": [
+      "keyboard-analyzer",
+      "metadata-menu",
+      "chat-cbt",
+      "editor-status",
+      "properties",
+      "backlink"
+    ],
+    "leftRibbon": [
+      "Open next daily note",
+      "Publish changes",
+      "Manage workspace layouts",
+      "Start/stop recording",
+      "Create new unique note",
+      "Open command palette",
+      "Insert template",
+      "Create new canvas",
+      "Open graph view",
+      "Open quick switcher",
+      "Open today"
+    ]
+  },
+  "spacing": "0",
+  "advancedToolbar": {
+    "rowHeight": 30,
+    "rowCount": 2,
+    "spacing": 0,
+    "buttonWidth": 30,
+    "columnLayout": false,
+    "mappedIcons": [
+      {
+        "commandID": "theme:use-light",
+        "iconID": "sun"
+      },
+      {
+        "commandID": "theme:use-dark",
+        "iconID": "moon"
+      },
+      {
+        "commandID": "templater-obsidian:jump-to-next-cursor-location",
+        "iconID": "fast-forward"
+      },
+      {
+        "commandID": "periodic-notes:open-prev-daily-note",
+        "iconID": "step-back"
+      },
+      {
+        "commandID": "periodic-notes:open-next-daily-note",
+        "iconID": "step-forward"
+      },
+      {
+        "commandID": "templater-obsidian:insert-templater",
+        "iconID": "file-box"
+      },
+      {
+        "commandID": "templater-obsidian:replace-in-file-templater",
+        "iconID": "lucide-replace-all"
+      },
+      {
+        "commandID": "periodic-notes:open-weekly-note",
+        "iconID": "calendar-week"
+      }
+    ],
+    "tooltips": true,
+    "heightOffset": 0
+  }
+}

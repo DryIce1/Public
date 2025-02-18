@@ -1,0 +1,1 @@
+<% tp.date.now("dddd YYYY-MM-DD", "P1M", tp.date.now("YYYY-MM") + "-01") %>
