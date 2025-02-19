@@ -1,11 +1,14 @@
 ---
-aliases: Recently modified
-banner: https://wallpaperstock.net/wallpapers/thumbs1/9760.jpg
+aliases:
+  - Recently modified
+banner: 
 banner_y: 1
-cssclass: wide-dataview
+cssclasses:
+  - wide-dataview
 date-created: 2023-01-01
 publish: true
-type: datascope
+type:
+  - datascope
 ---
  
 ```dataview

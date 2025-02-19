@@ -9,10 +9,16 @@
     "banner (1)",
     "hideproperties",
     "Custom properties - CSS styling",
-    "Line threading CSS snippet"
+    "Line threading CSS snippet",
+    "My accent theme snippet",
+    "Alternative checkboxes - styling and icons (Things theme)",
+    "Dracula Gemini - indented-hanging headers",
+    "Minimal cards view",
+    "z accent theme snippet",
+    "accent theme snippet"
   ],
   "theme": "obsidian",
-  "cssTheme": "Minimal",
+  "cssTheme": "",
   "baseFontSize": 16,
   "showViewHeader": true,
   "nativeMenus": false,

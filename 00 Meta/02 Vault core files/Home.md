@@ -7,8 +7,9 @@ icon:
 banner: 
 cssclasses:
   - button-callout
-  - banner-s
-  - home-css
+  - wide-table
+  - wide-dataview
+  - wide-backlinks
 date-created: 2023-01-01
 publish: false
 tags:

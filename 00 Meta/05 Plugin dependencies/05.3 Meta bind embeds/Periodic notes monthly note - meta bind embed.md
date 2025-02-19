@@ -8,7 +8,7 @@ tags:
   - meta-bind-embed
 ---
 
-> [!link|no icon]- `=link(dateformat(this.date-created - dur(1 month), "yyyy-MM"), dateformat(this.date-created - dur(1 month), "◀️ MMMM"))` `BUTTON[periodic-notes-date-switcher]` `= this.file.aliases` `=link([[Home]], "🏠")` `=link(dateformat(this.date-created + dur(1 month), "yyyy-MM"), dateformat(this.date-created + dur(1 month), "MMMM ▶️"))`
+> [!link|no icon]- `=link(dateformat(this.date-created - dur(1 month), "yyyy-MM"), dateformat(this.date-created - dur(1 month), "◀️ MMMM"))` `BUTTON[periodic-notes-date-switcher]` `= this.file.aliases` `=link(dateformat(this.date-created + dur(1 month), "yyyy-MM"), dateformat(this.date-created + dur(1 month), "MMMM ▶️"))`
 > 
 >> [!photo]+ snapshot
 >> - this month

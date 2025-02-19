@@ -1,1 +1,1 @@
-> [!transparent] |`=link(dateformat(date(today), "yyyy-MM-dd"), "🌤️")`|[[Tasks|✅]]|[[Home|🏡]]|[[Birthdays TOC|🧑‍🤝‍🧑]]|[[Catch Up with Friends and Family - datascope|☎️]]|[[Meta bind - datascope|📚]]|
+> [!transparent|right] |`=link(dateformat(date(today), "yyyy-MM-dd"), "🌤️")`|[[Tasks|✅]]|[[Home|🏡]]|[[Birthdays TOC|🧑‍🤝‍🧑]]|[[Catch Up with Friends and Family - datascope|☎️]]|[[Meta bind - datascope|📚]]|

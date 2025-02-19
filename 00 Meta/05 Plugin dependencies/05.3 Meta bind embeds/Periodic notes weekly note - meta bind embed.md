@@ -7,7 +7,7 @@ cssclasses:
 tags:
   - meta-bind-embed
 ---
-> [!link|no icon]- `= link(dateformat(date(this.days[3]) - dur(1 week), "yyyy-'W'WW"), "◀7")` `BUTTON[periodic-notes-date-switcher]` `=link([[Home]], "🏠")` `= split(this.file.name, "-")[1] + " : " + dateformat(date(this.days[0]), "DDDD")` to `= dateformat(date(this.days[6]), "DDDD")` `= link(dateformat(date(this.days[3]) + dur(1 week), "yyyy-'W'WW"), "▶️7")`
+> [!link|no icon]- `= link(dateformat(date(this.days[3]) - dur(1 week), "yyyy-'W'WW"), "◀7")` `BUTTON[periodic-notes-date-switcher]` `= split(this.file.name, "-")[1] + " : " + dateformat(date(this.days[0]), "DDDD")` to `= dateformat(date(this.days[6]), "DDDD")` `= link(dateformat(date(this.days[3]) + dur(1 week), "yyyy-'W'WW"), "▶️7")`
 >
 >> [!photo]- snapshot
 >> - last week `=default(link(this.last-week), "Last week")` 

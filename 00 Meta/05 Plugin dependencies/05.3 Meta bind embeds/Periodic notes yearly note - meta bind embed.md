@@ -8,7 +8,7 @@ tags:
   - meta-bind-embed
 ---
 
-> [!link|no icon]- `=link(dateformat(this.date-created - dur(1 year), "yyyy"), dateformat(this.date-created - dur(1 year), "◀️ yyyy"))` `BUTTON[periodic-notes-date-switcher]` `=link([[Home]], "🏠")` `= this.file.name + choice(this.aliases, " : **" + this.aliases + "**",  "")` `=link(dateformat(this.date-created + dur(1 year), "yyyy"), dateformat(this.date-created + dur(1 year), "yyyy ▶️"))`
+> [!link|no icon]- `=link(dateformat(this.date-created - dur(1 year), "yyyy"), dateformat(this.date-created - dur(1 year), "◀️ yyyy"))` `BUTTON[periodic-notes-date-switcher]` `= this.file.name + choice(this.aliases, " : **" + this.aliases + "**",  "")` `=link(dateformat(this.date-created + dur(1 year), "yyyy"), dateformat(this.date-created + dur(1 year), "yyyy ▶️"))`
 > 
 > ## reflections
 > 

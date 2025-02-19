@@ -4,33 +4,17 @@
   "weekStart": "locale",
   "showWeeklyNote": true,
   "sourceSettings": {
-    "wordCount": {
-      "color": "#ebcb8b",
-      "display": "calendar-and-menu",
-      "wordsPerDot": 250
-    },
     "tasks": {
-      "color": "#d08770",
-      "display": "calendar-and-menu",
-      "maxIncompleteTaskDots": 1
-    },
-    "links": {
-      "color": "#a3be8c",
       "display": "menu"
     },
     "backlinks": {
-      "color": "#5e81ac",
-      "display": "menu"
+      "display": "none"
     },
     "zettels": {
-      "color": "#b48ead",
-      "display": "calendar-and-menu"
-    },
-    "emoji-tags": {
       "display": "none"
     }
   },
-  "wordsPerDot": 250,
+  "wordsPerDot": 500,
   "weeklyNoteFormat": "YYYY/YYYY-[W]WW",
   "weeklyNoteTemplate": "00 Meta/05 Plugin dependencies/05.1 Templates/Core templates/Periodic note template - weekly note.md",
   "weeklyNoteFolder": "20 My/21 Journal"

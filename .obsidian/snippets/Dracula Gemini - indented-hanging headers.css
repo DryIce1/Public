@@ -1,0 +1,206 @@
+ /* ====== Dracula Gemini - indented/hanging headers */
+
+ :root {
+  --empty-line-height: 1em; /* 1em = 16px = 2/3 of the height of the normal line, which is 24px */
+  --header-hanging-margin: 30px; /* extra margin for hanging ### (header formatting) in there */
+}
+
+body{
+  /* --h1-size: 1.6em;
+  --h2-size: 1.8em;
+  --h3-size: 1.6em;
+  --h4-size: 1.4em;
+  --h5-size: 1.2em;
+  --h6-size: 1em; */
+
+--h1-size: 1.6em;
+--h2-size: 1.3em;
+--h3-size: 1.2em;
+--h4-size: 1.1em;
+--h5-size: 1em;
+--h6-size: 1em; */
+
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  --h1-line-height: 1.3125; /* 41.6px → 42px */
+  --h2-line-height: 1.2847; /* 37.44px → 37px */
+  --h3-line-height: 1.2891; /* 33.28px → 33px */
+  --h4-line-height: 1.2946; /* 29.12px → 29px */
+  --h5-line-height: 1.3021; /* 24.96px → 25px */
+  --h6-line-height: 1.3125; /* 20.8px → 21px */
+
+  --heading-spacing: 0;
+
+ }
+
+ .markdown-source-view .HyperMD-header,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+/* Header formatting prefix (###) */
+.markdown-source-view .cm-formatting-header {
+  color: inherit; /* inherit color from header, instead of using --heading-formatting */
+  opacity: 0.4;
+  font-size: 0.6em !important;
+}
+
+/* Hanging prefixes (### is outside in the text margin) */
+.markdown-source-view:not(.is-live-preview) .HyperMD-header-1,
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-1 { text-indent: -0.5184em; }
+.markdown-source-view:not(.is-live-preview) .HyperMD-header-2,
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-2 { text-indent: -0.9014em; }
+.markdown-source-view:not(.is-live-preview) .HyperMD-header-3,
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-3 { text-indent: -1.3004em; }
+.markdown-source-view:not(.is-live-preview) .HyperMD-header-4,
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-4 { text-indent: -1.7116em; }
+.markdown-source-view:not(.is-live-preview) .HyperMD-header-5,
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-5 { text-indent: -2.1396em; }
+.markdown-source-view:not(.is-live-preview) .HyperMD-header-6,
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-6 { text-indent: -2.5838em; }
+
+/* Empty line after headers, to align Preview with Source (sizing looks
+   tricky, but it's just to make the padding the same size in pixels) */
+.markdown-preview-view h1 { margin-bottom: calc(var(--empty-line-height) / 2); }
+.markdown-preview-view h2 { margin-bottom: calc(var(--empty-line-height) / 1.8); }
+.markdown-preview-view h3 { margin-bottom: calc(var(--empty-line-height) / 1.6); }
+.markdown-preview-view h4 { margin-bottom: calc(var(--empty-line-height) / 1.4); }
+.markdown-preview-view h5 { margin-bottom: calc(var(--empty-line-height) / 1.2); }
+.markdown-preview-view h6 { margin-bottom: calc(var(--empty-line-height) / 1); }
+
+/*
+ ********************************************************************************************************************
+ * Lists
+ * - Because overriding `--list-spacing` is not enough
+*/
+
+body {
+  /* Custom vars */
+  --list-item-gap: 0.375em; /* bottom margin for a list item, to keep the items separated */
+  --list-indent-spacing: 0.125em; /* +2px for every space in `    ` */
+  --list-ul-bullet-spacing: 0.0805em; /* width of `- ` is 11.42px by default, we make it 14px */
+  --list-ol-bullet-width: 1.75em; /* width of `99. ` is 28.16px; we set it to 28px, even for `1. ` */
+  --list-checkbox-margin-left: calc(var(--checkbox-size) * 0.385); /* match checkbox width to `[x]`; only affects Preview, doesn't affect Source */
+  --list-checkbox-margin-right: calc(var(--checkbox-size) * 0.685); /* match checkbox width to `[x]`; only affects Preview, doesn't affect Source */
+
+  /* Obsidian vars */
+  --list-spacing: 0; /* reset vertical padding on list items */
+  --list-indent: calc(1.046875em + 4 * var(--list-indent-spacing)); /* 16.75px + 8px, the width of 4 spaces */
+}
+
+/* Source UL+OL list items */
+.markdown-source-view .HyperMD-list-line + .HyperMD-list-line {
+  padding-top: var(--list-item-gap) !important;
+  padding-bottom: 0 !important;
+}
+
+/* Source UL+OL list items */
+.markdown-source-view .HyperMD-list-line .cm-hmd-list-indent {
+  letter-spacing: var(--list-indent-spacing);
+}
+
+/* Source UL bullet */
+.markdown-source-view .HyperMD-list-line .cm-formatting-list-ul {
+  letter-spacing: var(--list-ul-bullet-spacing);
+}
+
+/* Source OL bullet */
+.markdown-source-view .HyperMD-list-line .cm-formatting-list-ol {
+  display: inline-block;
+  min-width: var(--list-ol-bullet-width);
+  text-align: right;
+}
+
+/* Source UL+OL task checkbox */
+.markdown-source-view .HyperMD-list-line.HyperMD-task-line .cm-formatting-task {
+  color: var(--text-faint);
+}
+
+/* Source UL+OL task text
+ * - completed tasks have checkbox with .cm-property
+ * - incomplete tasks have checkbox with .cm-meta */
+.markdown-source-view .HyperMD-list-line.HyperMD-task-line:has(> .cm-property) {
+  text-decoration: var(--checklist-done-decoration);
+  color: var(--checklist-done-color);
+}
+
+/* Preview UL+OL list items
+ * - top-level ones get gaps, except for the first one
+ * - nested ones get gaps, including the first one */
+.markdown-preview-view li + li,
+.markdown-preview-view li li {
+  margin-top: var(--list-item-gap);
+}
+
+/* Preview UL top-level lists */
+.markdown-preview-view :not(li) > ul {
+  --list-ul-bullet-width: 0.875em; /* 14px, the width of `- `, hopefully; see declaration of --list-ul-bullet-spacing above */
+  margin-left: calc(var(--list-ul-bullet-width) - var(--list-indent));
+}
+
+/* Preview UL-task top-level lists */
+.markdown-preview-view :not(li) > ul.contains-task-list {
+  --list-ul-bullet-width: 0.875em; /* 14px, the width of `- `, hopefully; see declaration of --list-ul-bullet-spacing above */
+  --list-checkbox-width: var(--list-checkbox-margin-left) + var(--checkbox-size) + var(--list-checkbox-margin-right);
+  margin-left: calc(var(--list-ul-bullet-width) + var(--list-checkbox-width) - var(--list-indent));
+}
+
+/* Preview OL top-level lists */
+.markdown-preview-view :not(li) > ol {
+  margin-left: calc(var(--list-ol-bullet-width) - var(--list-indent));
+}
+
+/* Preview UL bullet */
+.markdown-preview-view .list-bullet {
+  justify-content: initial;
+  padding-top: 0.09375em; /* move 1.5px down */
+}
+
+/* Preview UL task checkbox */
+.markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
+  margin-inline-start: calc(-1 * (var(--checkbox-size) + var(--list-checkbox-margin-right)));
+  margin-right: var(--list-checkbox-margin-right);
+}
+
+/* Preview OL task checkbox */
+.markdown-preview-view ol.contains-task-list .task-list-item-checkbox {
+  margin-left: var(--list-checkbox-margin-left);
+  margin-right: var(--list-checkbox-margin-right);
+}
+
+/* Missing checked/done style for OL tasks (copied from the existing UL style in app.css) */
+ol > li.task-list-item[data-task="x"],
+ol > li.task-list-item[data-task="X"] {
+  text-decoration: var(--checklist-done-decoration);
+  color: var(--checklist-done-color);
+}
+
+/*
+ ********************************************************************************************************************
+ * Paragraphs & empty lines
+ * - in Source, we'll have empty lines after each block (header, paragraph, list etc.)
+ * - in Preview, we'll emulate empty lines with the equivalent padding-bottom / margin-bottom
+*/
+
+/* Empty line in Source is a separator, and should look smaller than a line with text */
+.markdown-source-view .cm-line:has(> br:only-child) {
+  height: var(--empty-line-height);
+  line-height: var(--empty-line-height); /* to vertically align the text cursor in the empty line */
+}
+
+/* Empty line after paragraphs, to align Preview with Source */
+.markdown-preview-view p {
+  margin: 0 0 var(--empty-line-height) 0;
+  padding: 0;
+}

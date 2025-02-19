@@ -1,15 +1,14 @@
 ---
-up:
-  - "[[Meta bind embeds (MOC, datascope)]]"
+up: []
 date-created: 2024-11-11
-cssclasses: []
+cssclasses: 
 tags:
   - meta-bind-embed
 ---
 ```meta-bind-embed
 [[Shortcuts widget - meta bind]]
 ```
-> [!link|no icon]+ `=link(dateformat(date(this.file.day) - dur(1day), "yyyy-MM-dd"), "◀🌅")` `BUTTON[periodic-notes-date-switcher]` `=link([[Home]], "🏠")` `=this.file.aliases` `=link(dateformat(date(this.file.day) + dur(1day), "yyyy-MM-dd"), "🌅▶")`
+> [!link|no icon]+ `=link(dateformat(date(this.file.day) - dur(1day), "yyyy-MM-dd"), "◀🌅")` `BUTTON[periodic-notes-date-switcher]` `=this.file.aliases` `=link(dateformat(date(this.file.day) + dur(1day), "yyyy-MM-dd"), "🌅▶")`
 > 
 >> [!photo]- snapshot
 >> - `=link(this.yesterday, "yesterday")`
@@ -26,7 +25,7 @@ tags:
 >>     - theme : **`=default(link(dateformat(date(this.date-created), "yyyy-MM")).theme, "*set this month's theme*")`**
 >>     - next-plans (from last month) : `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM")).next-plans, "*set last month's next-plans*")`
 >
->> [!morning]-
+>> [!reflection]- morning
 >> 
 >> ### sleep 
 >> ```dataview
@@ -60,7 +59,7 @@ tags:
 >> ```
 >> `INPUT[textArea(placeholder('gratitude : what are 3 to 10 things that I am grateful for? what is something that I have never noticed in my immediate environment?')):gratitude]`
 >
->> [!evening]-
+>> [!reflection]- evening
 >>
 >> ### highlights
 >> ```dataview

@@ -21,8 +21,7 @@ summary:
 > FROM #log/day 
 > WHERE 
 >     !completed AND !checked
->     AND
->     week.month = this.week.month 
+>     AND week.month = this.week.month 
 >     OR week.month = this.week.month.last-month[0]
 > ```
 
