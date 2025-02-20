@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Meta/02 Vault core files/Home.md",
+                "file": "10 Sources/Yannick - Film.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Yannick - Film"
             }
           }
         ]
@@ -137,13 +137,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Meta/02 Vault core files/Home.md",
+                "file": "10 Sources/Yannick - Film.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Home"
+              "title": "Outline of Yannick - Film"
             }
           },
           {
@@ -269,23 +269,41 @@
       "obsidian-book-search-plugin:Create new book note": false
     }
   },
-  "active": "1dc05df1f9c54d06",
+  "active": "595598e73040b6a3",
   "lastOpenFiles": [
-    "00 Meta/03 Datascopes/Birthdays - datascope.md",
-    "00 Meta/03 Datascopes/Books - datascope.md",
-    "00 Meta/03 Datascopes/Contacts - datascope.md",
-    "00 Meta/03 Datascopes/Daily note banners - datascope.md",
-    "00 Meta/03 Datascopes/Dream diary - datascope.md",
-    "00 Meta/03 Datascopes/Emotion tracker - datascope.md",
-    "00 Meta/03 Datascopes/Journal insights - datascope.md",
+    "30 Notes/new recipe - recipe.md",
+    "40 Projects/2025/Q1/Upload Obsidian clean vault 2025-01.md",
     "00 Meta/03 Datascopes/Media channels - datascope.md",
     "00 Meta/03 Datascopes/Meta bind - datascope.md",
+    "00 Meta/03 Datascopes/Journal insights - datascope.md",
+    "00 Meta/03 Datascopes/Hotkeys dataview.md",
+    "00 Meta/03 Datascopes/Emotion tracker - datascope.md",
+    "00 Meta/03 Datascopes/Dream diary - datascope.md",
+    "00 Meta/03 Datascopes/Doing the work (DTW) self inquiry - datascope.md",
+    "00 Meta/03 Datascopes/Daily note banners - datascope.md",
+    "00 Meta/03 Datascopes/Contacts - datascope.md",
+    "00 Meta/03 Datascopes/Books - datascope.md",
+    "00 Meta/03 Datascopes/Birthdays - datascope.md",
+    "40 Projects/2025/Q1",
+    "40 Projects/2025",
+    "40 Projects",
+    "20 My/21 Journal/2025/2025-02-20.md",
+    "20 My/Brain dump.md",
+    "20 My/Shopping list.md",
+    "20 My/Workpad.md",
+    "10 Sources/Yannick - Film.md",
     "00 Meta/03 Datascopes/My themes in reflection.md",
+    "00 Meta/03 Datascopes/Notes created in the past 2 days.md",
+    "00 Meta/03 Datascopes/Notes modified in the past 2 days.md",
     "00 Meta/03 Datascopes/Obsidian hotkeys - datascope.md",
+    "00 Meta/03 Datascopes/Orphaned notes - datascope.md",
+    "00 Meta/03 Datascopes/Templates database - datascope.md",
     "00 Meta/03 Datascopes/Recipes - datascope.md",
-    "00 Meta/03 Datascopes/World events today - datascope.md",
-    "00 Meta/02 Vault core files/Tasks.md",
-    "00 Meta/02 Vault core files/Home.md"
-
+    "00 Meta/01 Guidance/Rating scale.md",
+    " - Copy.gitattributes",
+    "sdf.gitattributes",
+    "00 Meta/Untitled/New folder/New Text Document.txt",
+    "00 Meta/Untitled/New folder",
+    "00 Meta/Untitled"
   ]
 }

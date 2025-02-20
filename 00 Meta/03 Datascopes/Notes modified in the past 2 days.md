@@ -1,11 +1,14 @@
 ---
-aliases: Recently modified
-banner: https://wallpaperstock.net/wallpapers/thumbs1/9760.jpg
+aliases:
+  - Recently modified
+banner: https://c4.wallpaperflare.com/wallpaper/449/959/627/birth-color-dust-fiction-wallpaper-preview.jpg
 banner_y: 1
-cssclass: wide-dataview
+cssclasses:
+  - wide-dataview
 date-created: 2023-01-01
 publish: true
-type: datascope
+type:
+  - datascope
 ---
  
 ```dataview
