@@ -1,0 +1,291 @@
+{
+  "main": {
+    "id": "780453eec9cdf0b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "94e75158ac3ab4e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "595598e73040b6a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Meta/02 Vault core files/Home.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2604036fec4922ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0635fbd7ebb5061",
+        "type": "tabs",
+        "dimension": 54.983202687569985,
+        "children": [
+          {
+            "id": "1dc05df1f9c54d06",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "File explorer"
+            }
+          },
+          {
+            "id": "7141b004b78690ab",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabeticalReverse"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e21beb3fb6f8ea75",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fb36d3d14050da35",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "38d763fe5b0c7642",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          },
+          {
+            "id": "3db06df4b5aa5637",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      },
+      {
+        "id": "d6f08cba64653d4f",
+        "type": "tabs",
+        "dimension": 45.016797312430015,
+        "children": [
+          {
+            "id": "ab812fe8fb3ab520",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00 Meta/02 Vault core files/Home.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Home"
+            }
+          },
+          {
+            "id": "56938e718e7e4ed6",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "00 Meta/02 Vault core files/Home.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Home"
+            }
+          },
+          {
+            "id": "509b830f681c8e03",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00 Meta/02 Vault core files/Home.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Home"
+            }
+          },
+          {
+            "id": "6beb4788cfce6ee7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00 Meta/02 Vault core files/Home.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 262.5
+  },
+  "right": {
+    "id": "8ff645647a393481",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ecf3fc3756753c5",
+        "type": "tabs",
+        "dimension": 35.22727272727273,
+        "children": [
+          {
+            "id": "dded9810884f24b1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3ae4c440f572cd7d",
+        "type": "tabs",
+        "dimension": 64.77272727272727,
+        "children": [
+          {
+            "id": "befd917b4adc5390",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Meta/02 Vault core files/Tasks.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Tasks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 260.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "templater-obsidian:Templater": false,
+      "periodic-notes:Open today's daily note": false,
+      "cmdr:Emotion picker template": false,
+      "obsidian-book-search-plugin:Create new book note": false
+    }
+  },
+  "active": "1dc05df1f9c54d06",
+  "lastOpenFiles": [
+    "00 Meta/03 Datascopes/Birthdays - datascope.md",
+    "00 Meta/03 Datascopes/Books - datascope.md",
+    "00 Meta/03 Datascopes/Contacts - datascope.md",
+    "00 Meta/03 Datascopes/Daily note banners - datascope.md",
+    "00 Meta/03 Datascopes/Dream diary - datascope.md",
+    "00 Meta/03 Datascopes/Emotion tracker - datascope.md",
+    "00 Meta/03 Datascopes/Journal insights - datascope.md",
+    "00 Meta/03 Datascopes/Media channels - datascope.md",
+    "00 Meta/03 Datascopes/Meta bind - datascope.md",
+    "00 Meta/03 Datascopes/My themes in reflection.md",
+    "00 Meta/03 Datascopes/Obsidian hotkeys - datascope.md",
+    "00 Meta/03 Datascopes/Recipes - datascope.md",
+    "00 Meta/03 Datascopes/World events today - datascope.md",
+    "00 Meta/02 Vault core files/Tasks.md",
+    "00 Meta/02 Vault core files/Home.md"
+
+  ]
+}
