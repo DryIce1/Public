@@ -1,45 +1,41 @@
 ---
-up:
-  - "[[Meta bind embeds (MOC, datascope)]]"
+up: []
 date-created: 2024-11-11
 cssclasses:
   - log
 tags:
   - meta-bind-embed
 ---
+
+```meta-bind-embed
+[[Shortcuts widget - meta bind]]
+```
+
 > [!link|no icon]- `= link(dateformat(date(this.days[3]) - dur(1 week), "yyyy-'W'WW"), "◀7")` `BUTTON[periodic-notes-date-switcher]` `= split(this.file.name, "-")[1] + " : " + dateformat(date(this.days[0]), "DDDD")` to `= dateformat(date(this.days[6]), "DDDD")` `= link(dateformat(date(this.days[3]) + dur(1 week), "yyyy-'W'WW"), "▶️7")`
 >
 >> [!photo]- snapshot
->> - last week `=default(link(this.last-week), "Last week")` 
+>> 
+>> - last week `=default(link(this.last-week), "**last week**")` 
 >>     - sleep-comments : `=default(this.last-week.next-plans, "**set last week's sleep-comments**")`
 >>     - highlights : `=default(this.last-week.next-plans, "**set last week's highlights**")`
 >>     - lessons-learned : `=default(this.last-week.next-plans, "**set last week's next-plans**")`
 >>     - next-plans : `=default(this.last-week.next-plans, "**set last week's next-plans**")`
->> - `=default(link(dateformat(date(this.date-created), "yyyy-MM"), dateformat(date(this.date-created), "MMMM")), "this month")` %% this month %%
->>     - theme : `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM")).theme, "**set this month's theme**")`
->> - `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM"), dateformat(date(this.date-created - dur(1 month)), "MMMM")), "**create last month's note**")` %% last month %%
+>> - this month `=default(link(dateformat(date(this.date-created), "yyyy-MM"), dateformat(date(this.date-created), "MMMM")), "this month")` %% this month %%
+>>     - theme : `=default(link(dateformat(date(this.date-created), "yyyy-MM")).theme, "**set this month's theme**")`
+>> - last month `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM"), dateformat(date(this.date-created - dur(1 month)), "MMMM")), "**create last month's note**")` %% last month %%
 >>     - theme : `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM")).theme, "**set last month's theme**")`
 >>     - sleep-comments : `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM")).sleep-comments, "**set last month's sleep-comments**")`
 >>     - highlights : `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM")).highlights, "**set last month's highlights**")`
 >>     - lessons-learned : `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM")).lessons-learned, "**set last month's lessons-learned**")`
 >>     - next-plans : `=default(link(dateformat(date(this.date-created - dur(1 month)), "yyyy-MM")).next-plans, "**set last month's next-plans**")`
 >> 
->>> [!image-description] `=choice(this.banner, "![photo|300](" + this.banner + ")" + choice(this.banner-description, this.banner-description, ""), "**copy photo and paste into banner button below**")`
+>>> [!image-description] `=choice(this.banner, "![photo|300](" + this.banner + ")" + choice(this.banner-description, this.banner-description, ""), "**paste image URL into banner button below**")`
 >
 >> [!reflection]- ### sleep
->>```dataview
->> TABLE WITHOUT ID
->>     link(days.file.link, dateformat(days.file.day, "ccc dd ")) AS date,
->>     "**"+(days.awake - days.sleep)  + "**<br>" +
->>         dateformat(days.sleep, "t") + " → " + dateformat(days.awake, "t")  as sleep,
->>     days.sleep-comments as "sleep-comments"
->> FROM #log/week
->> WHERE file.name = this.file.name
->> FLATTEN days
->> LIMIT 10
->> ```
 >> 
->>```dataviewjs
+>> - insert sleep duration : `INPUT[number():sleep-duration]`
+>>
+>> ```dataviewjs
 >> // Get the current file's metadata, including the list of days
 >> const days = dv.current().days;
 >> 
@@ -72,7 +68,7 @@ tags:
 >>         const hours = Math.floor(avgSleep);
 >>         const minutes = Math.round((avgSleep - hours) * 60);
 >>         const avgSleepRounded = parseFloat(avgSleep.toFixed(2))
->>         dv.paragraph(`Calculated average sleep duration: **${hours} hours, ${minutes} minutes** (${avgSleepRounded})`);
+>>         dv.paragraph(`average sleep duration : **${hours} hours, ${minutes} minutes** (${avgSleepRounded})`);
 >> 
 >>     } else {
 >>         dv.paragraph("No valid sleep data available for this week.");
@@ -80,59 +76,84 @@ tags:
 >> }
 >> ```
 >> 
->> insert sleep duration : `INPUT[number():sleep-duration]`
->> 
 >> `INPUT[textArea(placeholder('sleep comments : observations, patterns and reflections on sleep quality')):sleep-comments]`
+>> 
+>> ```dataview
+>> TABLE WITHOUT ID
+>>     link(days.file.link, dateformat(days.file.day, "ccc dd ")) AS date,
+>>     "**"+(days.awake - days.sleep)  + "**<br>" +
+>>         dateformat(days.sleep, "t") + " → " + dateformat(days.awake, "t")  as sleep,
+>>     days.sleep-comments as "sleep-comments"
+>> FROM #log/week
+>> WHERE file.name = this.file.name
+>> FLATTEN days
+>> SORT days.file.name DESC
+>> LIMIT 10
+>> ```
 >
 >> [!reflection]- ### gratitude
->>```dataview
+>> 
+>>`INPUT[textArea(placeholder('gratitude : what are 3 to 10 things that I am grateful for? what is something that I have never noticed in my immediate environment?')):gratitude]`
+>> 
+>> ```dataview
 >> TABLE WITHOUT ID
 >> link(days.file.link, dateformat(days.file.day, "ccc dd ")) AS date,
 >>     days.gratitude AS gratitude
 >> FROM #log/week
 >> WHERE file.name = this.file.name
 >> FLATTEN days
+>> SORT days.file.name DESC
 >> LIMIT 10
 >> ```
->> `INPUT[textArea(placeholder('gratitude : what are 3 to 10 things that I am grateful for? what is something that I have never noticed in my immediate environment?')):gratitude]`
 >
 >> [!reflection]- ### highlights
->>```dataview
+>> 
+>> ```dataview
 >> TABLE WITHOUT ID
 >> link(days.file.link, dateformat(days.file.day, "ccc dd ")) AS date,
 >>     days.highlights AS highlights
 >> FROM #log/week
 >> WHERE file.name = this.file.name
 >> FLATTEN days
+>> SORT days.file.name DESC
 >> LIMIT 10
 >> ```
->> - `INPUT[textArea(placeholder('highlights : key moments? what excited me? how did I move things forward?')):Highlights]`
+>>
+>>`INPUT[textArea(placeholder('highlights : key moments? what excited me? how did I move things forward?')):Highlights]`
 >
 >> [!reflection]- ### lessons-learned
->>```dataview
+>> 
+>> `INPUT[textArea(placeholder('lessons learned : insights, mistakes, failures and a functional interpretation')):lessons-learned]`
+>> 
+>> ```dataview
 >> TABLE WITHOUT ID
 >> link(days.file.link, dateformat(days.file.day, "ccc dd ")) AS date,
 >>     days.lessons-learned AS lessons-learned
 >> FROM #log/week
 >> WHERE file.name = this.file.name
 >> FLATTEN days
+>> SORT days.file.name DESC
 >> LIMIT 10
 >> ```
->> `INPUT[textArea(placeholder('lessons learned : insights, mistakes, failures and a functional interpretation')):lessons-learned]`
 >
 >> [!reflection]- ### next-plans
->>```dataview
+>> 
+>> `INPUT[textArea(placeholder('next-plans : plan the next period, set goals, and any tasks to do')):next-plans]`
+>> 
+>> ```dataview
 >> TABLE WITHOUT ID
 >> link(days.file.link, dateformat(days.file.day, "ccc dd ")) AS date,
 >>     days.next-plans AS next-plans
 >> FROM #log/week
 >> WHERE file.name = this.file.name
 >> FLATTEN days
+>> SORT days.file.name DESC
 >> LIMIT 10
 >> ```
->> `INPUT[textArea(placeholder('next-plans : plan the next period, set goals, and any tasks to do')):next-plans]`
 >
 >> [!photo]-
+>> 
+>> `BUTTON[add-banner-direct-image-URL]`
 >> 
 >> ```dataview
 >> TABLE WITHOUT ID
@@ -143,9 +164,9 @@ tags:
 >> FROM #log/week
 >> WHERE file.name = this.file.name
 >> FLATTEN days
+>> SORT days.file.name DESC
 >> LIMIT 10
 >> ```
->> `BUTTON[add-banner-direct-image-URL]`
 >
 >> [!search|c]- periodic notes support pages
 >> 

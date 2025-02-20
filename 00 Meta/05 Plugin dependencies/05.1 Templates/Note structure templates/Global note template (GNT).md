@@ -48,7 +48,7 @@ const TYPES_CONFIG = {
   note: {
     path: "30 Notes"
   },
-  /**
+
   medicine: {
     type: "medical_note",
     path: "30 Notes/31 Medicine",
@@ -56,7 +56,6 @@ const TYPES_CONFIG = {
     template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Templates relating to my workflow/Medicine - diagnosis.md",
     publishMode: "always"
   },
-*/
 
   my: {
     type: "note",

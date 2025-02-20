@@ -450,7 +450,7 @@ img
   }
 
   /* “Fit” or “Max Width” for callout dimensions */
-  .callout[data-callout-metadata="fit"] {
+  .callout[data-callout-metadata="fit-content"] {
     max-width: fit-content;
     padding: 0.5em;
   }
@@ -685,7 +685,8 @@ img
     [data-property-key="last-year"],
     [data-property-key="quarters"],
     [data-property-key="months"],
-    [data-property-key="decade"]
+    [data-property-key="decade"],
+    [data-property-key="5-year"]
   ) {
     border-radius: unset;
     background-color: var(--accent-2, var(--color-base-30));
@@ -708,7 +709,8 @@ img
     [data-property-key="last-year"],
     [data-property-key="quarters"],
     [data-property-key="months"],
-    [data-property-key="decade"]
+    [data-property-key="decade"],
+    [data-property-key="5-year"]
   ) .metadata-property-key-input {
     font-weight: var(--bold-weight);
     font-size: var(--font-ui-large);
@@ -730,7 +732,8 @@ img
     [data-property-key="last-year"],
     [data-property-key="quarters"],
     [data-property-key="months"],
-    [data-property-key="decade"]
+    [data-property-key="decade"],
+    [data-property-key="5-year"]
   ) .metadata-property-value {
     font-weight: var(--bold-weight);
     font-size: var(--font-ui-large);
@@ -768,7 +771,8 @@ img
     [data-property-key="last-year"],
     [data-property-key="quarters"],
     [data-property-key="months"],
-    [data-property-key="decade"]
+    [data-property-key="decade"],
+    [data-property-key="5-year"]
   ) input.metadata-property-key-input {
     background-color: unset;
   }
@@ -788,7 +792,8 @@ img
     [data-property-key="last-year"],
     [data-property-key="quarters"],
     [data-property-key="months"],
-    [data-property-key="decade"]
+    [data-property-key="decade"],
+    [data-property-key="5-year"]
   ) .metadata-property-icon {
     background-color: unset;
   }

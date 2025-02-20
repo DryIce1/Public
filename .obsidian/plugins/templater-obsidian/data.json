@@ -30,12 +30,13 @@
   "syntax_highlighting_mobile": true,
   "enabled_templates_hotkeys": [
     "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md",
-    "00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/banner - google photo share link, paste to banner property - JS template.md",
     "00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/banner - paste image URL to banner property - JS template.md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/banner - google photo share link, paste to banner property - JS template.md",
     "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - weekly.md",
     "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - monthly.md",
     "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - yearly - last year.md",
-    "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - yearly - next year.md"
+    "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - yearly - next year.md",
+    "00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Reset default sleep-awake values - template.md"
   ],
   "startup_templates": [],
   "enable_ribbon_icon": false

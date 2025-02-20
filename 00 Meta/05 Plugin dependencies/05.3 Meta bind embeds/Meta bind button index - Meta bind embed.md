@@ -16,8 +16,30 @@ actions:
 ```
 
 %% ## Daily notes %%
+
+
 ```meta-bind-button
-label: Create morning pages section
+label: "Reset sleep/awake values"
+icon: clock-11
+hidden: true
+tooltip: "Reset sleep/awake values"
+id: periodic-notes-daily-reset-sleep-value
+style: default
+actions:
+  - type: command
+    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Reset default sleep-awake values - template.md
+  - type: sleep
+    ms: 100
+  - type: command
+    command: workspace:close
+  - type: sleep
+    ms: 100
+  - type: command
+    command: workspace:undo-close-pane
+```
+
+```meta-bind-button
+label: Morning pages section
 icon: ""
 hidden: true
 class: ""
@@ -81,12 +103,12 @@ label: Yearly review - last year
 icon: ""
 hidden: true
 class: ""
-tooltip: Insert yearly review
+tooltip: "Insert yearly review (last year)"
 id: yearly-review-last-year
 style: default
 actions:
   - type: command
-    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Periodic notes - checklist - yearly - last year.md
+    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - yearly - last year.md
 ```
 
 ```meta-bind-button
@@ -94,12 +116,12 @@ label: Yearly review - next year
 icon: ""
 hidden: true
 class: ""
-tooltip: Insert yearly review
+tooltip: "Insert yearly review (next year)"
 id: yearly-review-next-year
 style: default
 actions:
   - type: command
-    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Periodic notes - checklist - yearly - next year.md
+    command: templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Plugin related templates/Periodic notes templates/Periodic notes - checklist - yearly - next year.md
 ```
 
 %% # Banners and Google photos %%

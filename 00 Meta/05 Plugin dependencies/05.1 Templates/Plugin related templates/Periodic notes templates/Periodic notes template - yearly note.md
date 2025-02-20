@@ -3,6 +3,8 @@ last-year:
   - "[[<% tp.date.now("YYYY", -1, tp.file.title, "YYYY") %>]]"
 decade:
   - "[[<% tp.file.title.slice(0, 3) + '0-' + tp.file.title.slice(0, 3) + '9' %>]]"
+5-year: 
+  - "[[<%* const year = parseInt(tp.file.title); const start = Math.floor(year / 5) * 5; const end = start + 4; tR += start + "-" + end; %>]]"
 quarters:
   - "[[<% tp.date.now("YYYY-[Q]1", +0, tp.file.title, "YYYY") %>]]"
   - "[[<% tp.date.now("YYYY-[Q]2", +0, tp.file.title, "YYYY") %>]]"

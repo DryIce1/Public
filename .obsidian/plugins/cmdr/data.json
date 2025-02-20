@@ -29,19 +29,7 @@
       "mode": "any"
     }
   ],
-  "macros": [
-    {
-      "macro": [
-        {
-          "action": 0,
-          "commandId": "templater-obsidian:00 Meta/06 Plugin dependencies/06.1 Templates/Note structure templates/Global note template (GNT).md"
-        }
-      ],
-      "name": "GNT",
-      "icon": "lucide-file-plus",
-      "startup": false
-    }
-  ],
+  "macros": [],
   "explorer": [],
   "hide": {
     "statusbar": [

@@ -22,6 +22,12 @@
         "Alt"
       ],
       "key": "2"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowDown"
     }
   ],
   "editor:swap-line-up": [
@@ -30,6 +36,12 @@
         "Alt"
       ],
       "key": "1"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
     }
   ],
   "sliding-panes-obsidian:toggle-sliding-panes-stacking": [],
@@ -1730,6 +1742,14 @@
         "Alt"
       ],
       "key": "L"
+    }
+  ],
+  "quickadd:choice:a23234c6-58dd-4f22-befe-aed5f1fff62a": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "U"
     }
   ]
 }

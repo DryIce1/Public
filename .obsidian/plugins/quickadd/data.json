@@ -177,6 +177,13 @@
           "openFileInMode": "default"
         },
         {
+          "id": "a23234c6-58dd-4f22-befe-aed5f1fff62a",
+          "name": "Reload Meta bind embed",
+          "type": "Macro",
+          "command": true,
+          "macroId": "87341e0d-defd-47cc-9061-7c39dc31f4d9"
+        },
+        {
           "id": "c8797d75-74e5-4dbc-bf53-92004ceb2af5",
           "name": "Template - Create \"Doing the work\" with link (DTW)",
           "type": "Template",
@@ -393,6 +400,31 @@
           "type": "Obsidian",
           "id": "3fbeddf3-a6ac-431c-b577-0cc525b9c956",
           "commandId": "obsidian-hotkeys-for-specific-files:00 Meta/02 Vault core files/Tasks.md"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Reload Meta bind embed",
+      "id": "87341e0d-defd-47cc-9061-7c39dc31f4d9",
+      "commands": [
+        {
+          "name": "Close current tab",
+          "type": "Obsidian",
+          "id": "e88e6646-88b5-4427-8bb6-442ee1073c80",
+          "commandId": "workspace:close"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "2d4405a6-e57f-461b-8c0b-53bf9ba1e23f",
+          "time": 100
+        },
+        {
+          "name": "Undo close tab",
+          "type": "Obsidian",
+          "id": "03c4c909-d8a2-42db-9877-4fdd9da93923",
+          "commandId": "workspace:undo-close-pane"
         }
       ],
       "runOnStartup": false

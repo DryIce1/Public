@@ -1,6 +1,5 @@
 ---
 up:
-  - "[[Meta bind embeds (MOC, datascope)]]"
 date-created: 2024-11-11
 cssclasses:
   - log
@@ -8,26 +7,38 @@ tags:
   - meta-bind-embed
 ---
 
-> [!link|no icon]- `=link(dateformat(this.date-created - dur(1 month), "yyyy-MM"), dateformat(this.date-created - dur(1 month), "◀️ MMMM"))` `BUTTON[periodic-notes-date-switcher]` `= this.file.aliases` `=link(dateformat(this.date-created + dur(1 month), "yyyy-MM"), dateformat(this.date-created + dur(1 month), "MMMM ▶️"))`
+```meta-bind-embed
+[[Shortcuts widget - meta bind]]
+```
+
+> [!link|no icon]+ `=link(dateformat(this.date-created - dur(1 month), "yyyy-MM"), dateformat(this.date-created - dur(1 month), "◀️ MMMM"))` `BUTTON[periodic-notes-date-switcher]` `= this.file.aliases` `=link(dateformat(this.date-created + dur(1 month), "yyyy-MM"), dateformat(this.date-created + dur(1 month), "MMMM ▶️"))`
 > 
->> [!photo]+ snapshot
->> - this month
->>     - theme : `=default(this.theme, "**enter theme below**")`
->> - `=link(this.last-month, dateformat(this.date-created - dur(1 month), "MMMM"))` 
->>     - sleep-comments : `=this.last-month.sleep-comments`
->>     - highlights : `=this.last-month.highlights`
->>     - lessons learned : `=this.last-month.lessons-learned`
->>     - next-plans : `=this.last-month.next-plans`
->>     - theme : `=this.last-month.theme`
->> - `=this.year`
->>     - theme : `=this.year.theme` 
->>     - `=this.year.last-year.file.name` : `=this.year.last-year.next-plans`
+>> [!photo]- snapshot
 >> 
->>> [!image-description] `=choice(this.banner, "![photo](" + this.banner + ")" + choice(this.banner-description, this.banner-description, ""), "**choose monthly banner**")`
+>> - last month `=default(link(this.last-month, dateformat(this.date-created - dur(1 month), "MMMM")), "**last month**")` 
+>>     - sleep-comments : `=default(this.last-month.sleep-comments, "**set last month's sleep-comments**")`
+>>     - highlights : `=default(this.last-month.highlights, "**set last month's highlights**")`
+>>     - lessons-learned : `=default(this.last-month.lessons-learned, "**set last month's lessons-learned**")`
+>>     - next-plans : `=default(this.last-month.next-plans, "**set last month's next-plans**")`
+>>     - theme : `=default(this.last-month.theme, "**set last month's theme**")`
+>> - this month (`=this.file.name`)
+>>     - theme : `=default(this.theme, "**set this months theme below**")`
+>> - this year `=default(link(this.year), "**create this year's note**")`
+>>     - theme : `=default(this.year.theme, "**set this year's theme**")` 
+>>     - last year's (`=this.year.last-year.file.name`) next-plans : `=default(this.year.last-year.next-plans, "**set last year's next-plans**")`
+>> 
+>>> [!image-description] `=choice(this.banner, "![photo|300](" + this.banner + ")" + choice(this.banner-description, this.banner-description, ""), "**paste image URL into banner button below**")`
 >>
 >>%%  - `=link(this.quarter)` projects : `=this.quarter.projects` %%
 >
 >> [!reflection]- ### sleep
+>> 
+>> - insert sleep duration : `INPUT[number(placeholder(sleep duration)):sleep-duration]`
+>> 
+>> calculated sleep duration : `= "**" + round(sum(nonnull(this.weeks.sleep-duration)) / length(nonnull(this.weeks.sleep-duration)), 2) + " hours**"` 
+>> 
+>> `INPUT[textArea(placeholder('sleep comments : observations, patterns and reflections on sleep quality')):sleep-comments]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     weeks.file.link AS date, 
@@ -36,14 +47,15 @@ tags:
 >> FROM #log/month
 >> WHERE file.name = this.file.name
 >> FLATTEN weeks
->> sort file.name ASC
+>> SORT weeks.file.name DESC
 >> LIMIT 10
 >> ```
 >>
->> `INPUT[textArea(placeholder('sleep comments : observations, patterns and reflections on sleep quality')):sleep-comments]`
->> - average sleep duration : `=round(sum(nonnull(this.weeks.sleep-duration)) / length(nonnull(this.weeks.sleep-duration)), 2)` hours  `INPUT[number(placeholder(sleep duration)):sleep-duration]`
 >
 >> [!reflection]- ### gratitude
+>> 
+>> `INPUT[textArea(placeholder('gratitude : what are 3 to 10 things that I am grateful for? what is something that I have never noticed in my immediate environment?')):gratitude]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     weeks.file.link AS date, 
@@ -51,12 +63,14 @@ tags:
 >> FROM #log/month
 >> WHERE file.name = this.file.name
 >> FLATTEN weeks
->> sort file.name ASC
+>> SORT weeks.file.name DESC
 >> LIMIT 10
 >> ```
->> `INPUT[textArea(placeholder('gratitude : what are 3 to 10 things that I am grateful for? what is something that I have never noticed in my immediate environment?')):gratitude]`
 >
 >> [!reflection]- ### theme
+>> 
+>> `INPUT[textArea(placeholder(theme)):theme]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     file.link AS date,
@@ -65,12 +79,14 @@ tags:
 >> WHERE
 >>     date-created >= this.date-created - dur(12 months)
 >>     AND date-created < this.date-created
->> sort file.name ASC
+>> SORT weeks.file.name DESC
 >> LIMIT 10
 >> ```
->> `INPUT[textArea(placeholder(theme)):theme]`
 >
 >> [!reflection]- ### highlights
+>> 
+>> - `INPUT[textArea(placeholder('highlights : key moments? what excited me? how did I move things forward?')):highlights]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     weeks.file.link AS date, 
@@ -78,12 +94,29 @@ tags:
 >> FROM #log/month
 >> WHERE file.name = this.file.name
 >> FLATTEN weeks
->> sort file.name ASC
+>> SORT weeks.file.name DESC
 >> LIMIT 10
 >> ```
->> - `INPUT[textArea(placeholder('highlights : key moments? what excited me? how did I move things forward?')):highlights]`
+>
+>> [!reflection]- ### lessons-learned
+>> 
+>> `INPUT[textArea(placeholder('lessons learned : insights, mistakes, failures and a functional interpretation')):lessons-learned]`
+>> 
+>> ```dataview
+>> TABLE WITHOUT ID
+>>     weeks.file.link AS date, 
+>>     weeks.lessons-learned AS lessons-learned
+>> FROM #log/month
+>> WHERE file.name = this.file.name
+>> FLATTEN weeks
+>> SORT weeks.file.name DESC
+>> LIMIT 10
+>> ```
 >
 >> [!reflection]- ### next-plans
+>> 
+>> `INPUT[textArea(placeholder('next-plans : plan the next period, set goals, and any tasks to do')):next-plans]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     weeks.file.link AS date, 
@@ -91,12 +124,13 @@ tags:
 >> FROM #log/month
 >> WHERE file.name = this.file.name
 >> FLATTEN weeks
->> sort file.name ASC
+>> SORT weeks.file.name DESC
 >> LIMIT 10
 >> ```
->> `INPUT[textArea(placeholder('next-plans : plan the next period, set goals, and any tasks to do')):next-plans]`
 >
 >> [!photo]-
+>> 
+>> `BUTTON[add-banner-direct-image-URL]`
 >> 
 >> ```dataview
 >> TABLE WITHOUT ID
@@ -107,9 +141,9 @@ tags:
 >> FROM #log/month
 >> WHERE file.name = this.file.name
 >> FLATTEN weeks
+>> SORT weeks.file.name DESC
 >> LIMIT 10
 >> ```
->> `BUTTON[add-banner-direct-image-URL]`
 >
 >> [!search|c]- periodic notes support pages
 >> 

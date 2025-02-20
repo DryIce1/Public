@@ -1,4 +1,5 @@
 {
   "quick-explorer@@qe-hide-breadcrumbs": true,
-  "quick-explorer@@qe-obsidian-title": "qe-title-hide"
+  "quick-explorer@@qe-obsidian-title": "qe-title-hide",
+  "list-callouts@@lc-bg-right": 0
 }

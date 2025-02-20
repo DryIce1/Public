@@ -2,15 +2,19 @@
 up: []
 date-created: 2024-11-11
 cssclasses: 
+  - log
 tags:
   - meta-bind-embed
 ---
+
 ```meta-bind-embed
 [[Shortcuts widget - meta bind]]
 ```
+
 > [!link|no icon]+ `=link(dateformat(date(this.file.day) - dur(1day), "yyyy-MM-dd"), "◀🌅")` `BUTTON[periodic-notes-date-switcher]` `=this.file.aliases` `=link(dateformat(date(this.file.day) + dur(1day), "yyyy-MM-dd"), "🌅▶")`
 > 
 >> [!photo]- snapshot
+>> 
 >> - `=link(this.yesterday, "yesterday")`
 >>     - sleep-comments : `=default(this.yesterday.sleep-comments, "*set yesterday's next-plans*")`
 >>     - highlights : `=default(this.yesterday.highlights, "*set yesterday's highlights*")`
@@ -28,24 +32,33 @@ tags:
 >> [!reflection]- morning
 >> 
 >> ### sleep 
->> ```dataview
->> TABLE WITHOUT ID
->>     link(file.link, dateformat(file.day, "ccc dd")) AS date,
->>     default("**" + default(date(awake) - date(sleep), "_no sleep data!_") + "**<br>" +
->>         dateformat(date(sleep), "t") + " → " + 
->>         dateformat(date(awake), "t"), "test") AS sleep,
->>     sleep-comments AS "comments"
->> FROM #log/day
->> WHERE 
->>     file.day >= this.file.day - dur(7 days) 
->>     AND file.day < this.file.day
->> SORT file.day ASC
->> ```
->> - sleep duration today : **`=this.awake - this.sleep`** (`=dateformat(this.sleep, "t")` → `=dateformat(this.awake, "t")`) 
+>> 
+>> `BUTTON[periodic-notes-daily-reset-sleep-value]`
+>> - sleep: `INPUT[dateTime():sleep]` 
+>> - awake : `INPUT[dateTime():awake]`
+>>     - sleep duration today : **`=this.awake - this.sleep`** (`=dateformat(this.sleep, "t")` → `=dateformat(this.awake, "t")`) 
 >>
 >> `INPUT[textArea(placeholder('sleep comments : observations, patterns and reflections on sleep quality')):sleep-comments]`
+>>  
+>>> [!reflection|fit-content]- sleep log 
+>>> ```dataview
+>>> TABLE WITHOUT ID
+>>>     link(file.link, dateformat(file.day, "ccc dd")) AS date,
+>>>     default("**" + default(date(awake) - date(sleep), "_no sleep data!_") + "**<br>" +
+>>>         dateformat(date(sleep), "t") + " → " + 
+>>>         dateformat(date(awake), "t"), "test") AS sleep,
+>>>     sleep-comments AS "comments"
+>>> FROM #log/day
+>>> WHERE 
+>>>     file.day >= this.file.day - dur(7 days) 
+>>>     AND file.day < this.file.day
+>>> SORT file.day DESC
+>>> ```
 >> 
 >> ### gratitude
+>> 
+>> `INPUT[textArea(placeholder('gratitude : what are 3 to 10 things that I am grateful for? what is something that I have never noticed in my immediate environment?')):gratitude]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     link(file.link, dateformat(file.day, "ccc dd")) AS date,
@@ -55,13 +68,17 @@ tags:
 >>     gratitude 
 >>     AND file.day >= this.file.day - dur(7 days) 
 >>     AND file.day < this.file.day
->> SORT file.day ASC
+>> SORT file.day DESC
 >> ```
->> `INPUT[textArea(placeholder('gratitude : what are 3 to 10 things that I am grateful for? what is something that I have never noticed in my immediate environment?')):gratitude]`
 >
 >> [!reflection]- evening
 >>
 >> ### highlights
+>> 
+>> - `="[select Google photo](" + this.url + ")"` `BUTTON[add-banner-Google-Photo-share-link]`
+>>
+>> `INPUT[textArea(placeholder('highlights : key moments? what excited me? how did I move things forward?')):highlights]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     link(file.link, dateformat(file.day, "ccc dd")) AS date,
@@ -70,13 +87,13 @@ tags:
 >> WHERE 
 >>     file.day >= this.file.day - dur(7 days) 
 >>     AND file.day < this.file.day
->> SORT file.day ASC
+>> SORT file.day DESC
 >> ```
->> - `="[select Google photo](" + this.url + ")"` `BUTTON[add-banner-Google-Photo-share-link]`
->>
->> `INPUT[textArea(placeholder('highlights : key moments? what excited me? how did I move things forward?')):highlights]`
 >> 
 >> ### lessons-learned
+>> 
+>> `INPUT[textArea(placeholder('lessons learned : insights, mistakes, failures and a functional interpretation')):lessons-learned]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     link(file.link, dateformat(file.day, "ccc dd")) AS date,
@@ -85,11 +102,13 @@ tags:
 >> WHERE 
 >>     file.day >= this.file.day - dur(7 days) 
 >>     AND file.day < this.file.day
->> SORT file.day ASC
+>> SORT file.day DESC
 >> ```
->> `INPUT[textArea(placeholder('lessons learned : insights, mistakes, failures and a functional interpretation')):lessons-learned]`
 >> 
 >> ### next-plans 
+>> 
+>> `INPUT[textArea(placeholder('next-plans : plan the next period, set goals, and any tasks to do')):next-plans]`
+>> 
 >> ```dataview
 >> TABLE WITHOUT ID
 >>     link(file.link, dateformat(file.day, "ccc dd")) AS date,
@@ -99,16 +118,16 @@ tags:
 >> WHERE 
 >>     file.day >= this.file.day - dur(7 days) 
 >>     AND file.day < this.file.day
->> SORT file.day ASC
+>> SORT file.day DESC
 >> ```
->> `INPUT[textArea(placeholder('next-plans : plan the next period, set goals, and any tasks to do')):next-plans]`
 >
 >> [!search|c]- periodic notes support pages
->> ```meta-bind-embedzcancel
+>> 
+>> ```meta-bind-embed
 >> [[Periodic notes support pages - meta bind]]
 >> ```
 >
-> [[Periodic notes daily note - meta bind embed|📝]] `BUTTON[morning-pages]`
+> - [[Periodic notes daily note - meta bind embed|📝]] `BUTTON[morning-pages]`
 
 ```meta-bind-embed
 [[Meta bind button index - Meta bind embed]]
