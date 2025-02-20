@@ -1,13 +1,11 @@
 ---
-aliases:
-  - Monthly themes
+aliases: Monthly themes
 banner: https://wallpapercave.com/wp/wp4645793.jpg
-cssclasses: []
+cssclass: wide-dataview
 date-created: 2023-01-01
 publish: false
 banner_y: 0.5
-type:
-  - datascope
+type: datascope
 ---
 
 ```dataview

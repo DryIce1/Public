@@ -13,6 +13,8 @@ area:
 summary:
 ---
 
+> [!NOTE] a list of all templates in the vault's template folders
+
 ```dataview
 LIST
 FROM "00 Meta/05 Plugin dependencies/05.1 Templates"

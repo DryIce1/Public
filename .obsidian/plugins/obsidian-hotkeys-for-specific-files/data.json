@@ -2,11 +2,11 @@
   "files": [
     {
       "useMoment": false,
-      "file": "00 Meta/02 Vault core files/Tasks.md"
+      "file": "00 Meta/02 Vault core files/Home.md"
     },
     {
       "useMoment": false,
-      "file": "00 Meta/02 Vault core files/Home.md"
+      "file": "00 Meta/02 Vault core files/Tasks.md"
     }
   ],
   "useExistingPane": true,

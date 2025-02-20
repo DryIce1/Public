@@ -12,7 +12,17 @@ cssclasses:
 publish: false
 tags:
   - atlas/core
+  - favourite
+  - dog
+  - bigpo
+  - Ce
+  - flashcard/ankiflashcard
+  - atlas/MOC
 ---
+
+```meta-bind-embed
+[[Shortcuts widget - meta bind]]
+```
 
 > [!Attention] Priority 
 > ```tasks

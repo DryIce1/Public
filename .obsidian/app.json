@@ -1,7 +1,7 @@
 {
   "useTab": false,
   "alwaysUpdateLinks": true,
-  "showUnsupportedFiles": true,
+  "showUnsupportedFiles": false,
   "attachmentFolderPath": "00 Meta/04 Attachments/04.1 Attachments - default",
   "promptDelete": false,
   "spellcheck": true,
@@ -35,5 +35,6 @@
   ],
   "defaultViewMode": "source",
   "mobilePullAction": "command-palette:open",
-  "readableLineLength": true
+  "readableLineLength": false,
+  "strictLineBreaks": false
 }

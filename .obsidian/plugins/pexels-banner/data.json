@@ -8,7 +8,7 @@
   "imageOrientation": "landscape",
   "numberOfImages": 10,
   "defaultKeywords": "nature, abstract, landscape, technology, art, cityscape, wildlife, ocean, mountains, forest, space, architecture, food, travel, science, music, sports, fashion, business, education, health, culture, history, weather, transportation, industry, people, animals, plants, patterns",
-  "yPosition": 50,
+  "yPosition": 0,
   "xPosition": 50,
   "customBannerField": [
     "banner"
@@ -78,22 +78,26 @@
   ],
   "folderImages": [
     {
-      "folder": "10 Sources",
-      "image": "https://i.imgur.com/IK14Rr9.png",
+      "folder": "00 Meta",
+      "image": "https://i.imgur.com/6pgI4ug.png",
       "yPosition": 0,
       "contentStartPosition": 250,
-      "imageDisplay": "contain",
+      "imageDisplay": "cover",
       "imageRepeat": false,
-      "directChildrenOnly": false,
-      "fade": -65
+      "directChildrenOnly": false
+    },
+    {
+      "folder": "10 Sources",
+      "image": "https://i.imgur.com/IK14Rr9.png",
+      "contentStartPosition": 250,
+      "imageDisplay": "cover",
+      "imageRepeat": false,
+      "directChildrenOnly": false
     },
     {
       "folder": "20 My",
       "image": "https://i.imgur.com/S81Z7HJ.jpeg",
-      "yPosition": 0,
-      "contentStartPosition": 350,
-      "titleColor": "var(--inline-title-color)",
-      "fade": -65,
+      "contentStartPosition": 250,
       "imageDisplay": "cover",
       "imageRepeat": false,
       "directChildrenOnly": false,
@@ -101,43 +105,32 @@
     },
     {
       "folder": "30 Notes",
-      "image": "https://i.imgur.com/BfN9jFb.jpeg",
+      "image": "https://i.pinimg.com/736x/61/e6/05/61e605c621ed663987c45e220388dbb9.jpg",
       "yPosition": 0,
       "contentStartPosition": 250,
-      "imageDisplay": "contain",
+      "imageDisplay": "cover",
       "imageRepeat": false,
-      "directChildrenOnly": false,
-      "fade": -65
+      "directChildrenOnly": false
     },
     {
       "folder": "40 Projects",
-      "image": "https://i.imgur.com/BfN9jFb.jpeg",
-      "imageDisplay": "contain",
-      "imageRepeat": false,
-      "yPosition": 50,
-      "xPosition": 50,
-      "contentStartPosition": 250,
-      "fade": -65,
-      "titleColor": "var(--inline-title-color)",
-      "directChildrenOnly": false,
-      "enableImageShuffle": false,
-      "shuffleFolder": ""
-    },
-    {
-      "folder": "00 Meta",
-      "image": "https://images.unsplash.com/photo-1517299321609-52687d1bc55a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://wallpapercave.com/wp/wp4645793.jpg",
       "imageDisplay": "cover",
       "imageRepeat": false,
-      "yPosition": 100,
-      "xPosition": 50,
       "contentStartPosition": 250,
-      "bannerHeight": 350,
       "fade": -75,
-      "borderRadius": 25,
       "titleColor": "var(--inline-title-color)",
-      "directChildrenOnly": false,
-      "enableImageShuffle": false,
-      "shuffleFolder": ""
+      "directChildrenOnly": false
+    },
+    {
+      "folder": "/",
+      "image": "https://media.timeout.com/images/106006274/1920/1440/image.webp",
+      "imageDisplay": "cover",
+      "imageRepeat": false,
+      "contentStartPosition": 250,
+      "fade": -75,
+      "titleColor": "var(--inline-title-color)",
+      "directChildrenOnly": false
     }
   ],
   "contentStartPosition": 250,
@@ -145,7 +138,7 @@
   "imageRepeat": false,
   "bannerHeight": 350,
   "fade": -75,
-  "bannerFadeInAnimationDuration": 300,
+  "bannerFadeInAnimationDuration": 500,
   "borderRadius": 25,
   "showPinIcon": true,
   "pinnedImageFolder": "pixel-banner-images",

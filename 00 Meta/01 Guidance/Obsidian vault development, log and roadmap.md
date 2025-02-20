@@ -18,13 +18,15 @@ deadline:
 priority:
 ---
 # Ideas and improvements
+- [ ] Update properties so that they are now lists
+    - [ ] example : type, status
+- [ ] Create an improved delete paragraph template. triggering the template should delete the paragraph, and place the cursor at the end of the line preceding. Current behaviour of delete paragraph command is not convenient : it places the cursor at the same spot, which is often in the middle of the line and in the middle of a word, and it has never been in the right spot.
+- GNT improvements ([[Global note template GNT - development page]])
+    - [ ] add function to apply GNT en masse. Only allow if auto flow function is true.  define target folder. define number of files to modify (number of loops).
 - [ ] home page : fix banners displaying in embedded note callouts
 
 
 # Archived tasks
-- [x] Update properties so that they are now lists
-    - [x] example : type, status
-- [x] GNT improvements ([[Global note template GNT - development page]])
 - [x] Update dataview queries to reflect this change
 - [x] update GNT : when creating new note, need to focus on active editor prior to running insert template.
     - [x] update the frontmatter processing so that some values are inserted as lists 
@@ -35,7 +37,7 @@ priority:
     - [x] add auto flow function with configurable settings : this will allow the user to set Auto Flow to metadata paramaters such as the boolean true/false, and to define the Auto Flow parameters for type (+/- subtype), publish, secondary template choice, apply to current or create new note. If Auto flow true, then the Auto Flow parameters are run without any suggester/prompt pop ups.
     - [x] Reflection : am I happy with using area or would I prefer to use topic and subtopic?
     - [x] add function to reorder frontmatter to preferred order. 
-- [x] fix [[Books - datascope]] collections dataview
+- [x] fix [[Books]] collections dataview
 - [x] Fix GNT : some custom metadata is not getting added to the template.
 - [x] Rename the meta bind button index
 - [x] Update periodic notes meta bind notes so that the buttons are organised within the meta bind button index note

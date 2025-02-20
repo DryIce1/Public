@@ -2,7 +2,7 @@
 up:
   - "[[03 Datascopes (folder note)]]"
 related:
-  - "[[Meta bind - datascope]]"
+  - "[[Meta bind datascope (archive 2025-02-18-0042)]]"
 aliases: 
 tags: 
 banner: 
@@ -34,7 +34,7 @@ coverBind: false
 > [!multi-column]
 > 
 >> [!search|cmin]+ filter
->>  `BUTTON[resetProperties]`  
+>>  `BUTTON[resetProperties]`  `BUTTON[edit-meta-bind-embed]`
 >>
 >>> [!property]+ filter by **search** term 
 >>> ```meta-bind
@@ -88,7 +88,6 @@ coverBind: false
 >> INPUT[multiSelect(option(wide-dataview), option(dvl-c)):cssclasses]
 >> ```
 >>
->>`BUTTON[edit-meta-bind-embed]`
 
 > [!multi-column]
 >

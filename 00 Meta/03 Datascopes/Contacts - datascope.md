@@ -1,6 +1,6 @@
 ---
 aliases:
-  - Contact Frequency
+  - Catch up with friends and family - datascope
 banner: https://i.imgur.com/OoJmZ9r.jpg
 banner-y: 40
 banner_x: 0.31165

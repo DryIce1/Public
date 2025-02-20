@@ -34,7 +34,7 @@
       "macro": [
         {
           "action": 0,
-          "commandId": "templater-obsidian:00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Global note template (GNT).md"
+          "commandId": "templater-obsidian:00 Meta/06 Plugin dependencies/06.1 Templates/Note structure templates/Global note template (GNT).md"
         }
       ],
       "name": "GNT",
@@ -105,6 +105,10 @@
       {
         "commandID": "periodic-notes:open-weekly-note",
         "iconID": "calendar-week"
+      },
+      {
+        "commandID": "quickadd:runQuickAdd",
+        "iconID": "lucide-zap"
       }
     ],
     "tooltips": true,

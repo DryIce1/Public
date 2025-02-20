@@ -14,7 +14,7 @@ publish: true
 searchBind: 
 authorBind: 
 folderBind: 
-typeBind: []
+typeBind: 
 statusBind: 
 urgentBind: false
 importantBind: false

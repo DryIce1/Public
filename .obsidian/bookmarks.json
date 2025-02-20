@@ -17,6 +17,19 @@
     },
     {
       "type": "group",
+      "ctime": 1707730093034,
+      "items": [
+        {
+          "type": "search",
+          "ctime": 1707730069059,
+          "query": "\"- 🩺\"",
+          "title": "Diagnostic triads"
+        }
+      ],
+      "title": "Medicine searches"
+    },
+    {
+      "type": "group",
       "ctime": 1733001386916,
       "items": [
         {
@@ -26,8 +39,20 @@
           "title": ""
         },
         {
+          "type": "group",
+          "ctime": 1733001664625,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1733001689518,
+              "path": "00 Meta/05 Plugin dependencies/05.1 Templates/JS templates/Completed tasks and checkboxes - send to archive, delete, or move to another file - JS template.md"
+            }
+          ],
+          "title": "Templater favourites"
+        },
+        {
           "type": "file",
-          "ctime": 1739808712322,
+          "ctime": 1733001419672,
           "path": "00 Meta/01 Guidance/Obsidian vault development, log and roadmap.md"
         }
       ],

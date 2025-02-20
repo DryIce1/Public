@@ -213,7 +213,7 @@
           "templatePath": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Emotion picker template.md",
           "fileNameFormat": {
             "enabled": true,
-            "format": "Emotion - {{DATE:YYYY-MM-DD-HHmm}}"
+            "format": "Emotion - {{DATE:YYYY-MM-DD-HH00}}"
           },
           "folder": {
             "enabled": true,
@@ -327,7 +327,7 @@
         {
           "name": "Periodic Notes: Show date switcher...",
           "type": "Obsidian",
-          "id": "239e368d-b9e1-496f-a17e-d078d08cdd60",
+          "id": "0654da24-4b0f-4140-b85f-7ada5bfe2ac0",
           "commandId": "periodic-notes:show-date-switcher"
         }
       ],

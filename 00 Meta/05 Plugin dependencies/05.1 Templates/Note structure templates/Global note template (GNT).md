@@ -160,7 +160,7 @@ const TYPES_CONFIG = {
     path: "20 My/24 People",
     template: "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Mentions note - template.md",
     customMetadata: {
-      up: "[[Catch Up with Friends and Family - datascope]]",
+      up: "[[Contacts - datascope]]",
       birthdate: null,
       "contact-frequency": null
     },

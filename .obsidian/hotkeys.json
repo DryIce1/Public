@@ -1349,14 +1349,6 @@
       "key": "G"
     }
   ],
-  "snippet-commands-obsidian:snippet-command-My accent theme snippet": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "L"
-    }
-  ],
   "snippet-commands-obsidian:snippet-command-Hide YAML snippet": [
     {
       "modifiers": [
@@ -1730,6 +1722,14 @@
         "Shift"
       ],
       "key": "F"
+    }
+  ],
+  "snippet-commands-obsidian:snippet-command-accent theme snippet": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "L"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+	"id": "fold-properties",
+	"name": "Fold Properties",
+	"version": "0.0.4",
+	"minAppVersion": "0.15.0",
+	"description": "Adds fold/unfold properties function to folder context menu",
+	"author": "James Alexandre",
+	"authorUrl": "https://github.com/itsonlyjames",
+	"fundingUrl": {
+		"GitHub Sponsor": "https://github.com/sponsors/itsonlyjames"
+	},
+	"isDesktopOnly": false
+}

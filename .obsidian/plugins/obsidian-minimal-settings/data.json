@@ -17,8 +17,8 @@
   "mapWidth": "map-default-width",
   "chartWidth": "chart-default-width",
   "colorfulHeadings": true,
-  "colorfulFrame": true,
-  "colorfulActiveStates": true,
+  "colorfulFrame": false,
+  "colorfulActiveStates": false,
   "trimNames": true,
   "labeledNav": false,
   "fullWidthMedia": true,
@@ -29,6 +29,6 @@
   "underlineExternal": true,
   "folding": true,
   "lineNumbers": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "devBlockWidth": false
 }

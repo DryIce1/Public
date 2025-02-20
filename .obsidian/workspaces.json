@@ -15,7 +15,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "00 Meta/02 Vault core files/Home.md",
+                    "file": "00 Meta/02 Vault core files/Tasks.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -30,7 +30,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Home"
+                  "title": "Tasks"
                 }
               }
             ]
@@ -53,7 +53,7 @@
                 "state": {
                   "type": "file-explorer",
                   "state": {
-                    "sortOrder": "byModifiedTime",
+                    "sortOrder": "alphabetical",
                     "autoReveal": false
                   },
                   "icon": "lucide-folder-closed",
@@ -139,13 +139,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "00 Meta/02 Vault core files/Home.md",
+                    "file": "00 Meta/02 Vault core files/Tasks.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of Home"
+                  "title": "Outline of Tasks"
                 }
               },
               {
@@ -268,12 +268,11 @@
           "templater-obsidian:Templater": false,
           "periodic-notes:Open today's daily note": false,
           "cmdr:Emotion picker template": false,
-          "obsidian42-brat:BRAT": false,
           "obsidian-book-search-plugin:Create new book note": false
         }
       },
-      "active": "2350243bf625a498",
-      "mtime": "2025-02-18T15:32:34+01:00",
+      "active": "1dc05df1f9c54d06",
+      "mtime": "2025-02-20T03:19:01+01:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": []
       }

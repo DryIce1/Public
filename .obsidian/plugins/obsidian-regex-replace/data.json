@@ -1,7 +1,7 @@
 {
-  "findText": "\\n    - (.*)$",
-  "replaceText": "\n    - [[$1]]",
-  "useRegEx": true,
+  "findText": "#",
+  "replaceText": "##",
+  "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,
   "processLineBreak": true,

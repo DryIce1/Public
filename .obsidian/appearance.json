@@ -1,21 +1,12 @@
 {
-  "accentColor": "#b57b17",
+  "accentColor": "#a38105",
   "enabledCssSnippets": [
-    "home-css",
-    "indented headers",
-    "MCL Multi Column",
-    "Minimal dataview table cards view",
-    "MCL Wide Views",
-    "banner (1)",
-    "hideproperties",
-    "Custom properties - CSS styling",
-    "Line threading CSS snippet",
-    "My accent theme snippet",
+    "accent theme snippet",
     "Alternative checkboxes - styling and icons (Things theme)",
     "Dracula Gemini - indented-hanging headers",
+    "Line threading CSS snippet",
     "Minimal cards view",
-    "z accent theme snippet",
-    "accent theme snippet"
+    "MCL Multi Column"
   ],
   "theme": "obsidian",
   "cssTheme": "",
@@ -23,5 +14,6 @@
   "showViewHeader": true,
   "nativeMenus": false,
   "monospaceFontFamily": "Inter",
-  "showRibbon": false
+  "showRibbon": false,
+  "baseFontSizeAction": false
 }

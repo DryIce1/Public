@@ -2,7 +2,8 @@
 aliases: 
 banner: https://i.pinimg.com/originals/4a/73/18/4a73186742620ddc29db89c955f14e09.jpg
 banner-y: 65
-cssclass: wide-dataview
+cssclasses:
+  - banner-s
 date-created: 2023-02-18
 publish: true
 type:

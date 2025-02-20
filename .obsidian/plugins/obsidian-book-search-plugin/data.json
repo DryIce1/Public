@@ -1,11 +1,11 @@
 {
   "folder": "10 Sources",
-  "fileNameFormat": "{{title}} ({{author}}) - Book",
+  "fileNameFormat": "{{title}} ({{author}})",
   "frontmatter": "",
   "content": "",
   "useDefaultFrontmatter": true,
   "defaultFrontmatterKeyType": "Camel Case",
-  "templateFile": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Book search plugin - Template.md",
+  "templateFile": "00 Meta/05 Plugin dependencies/05.1 Templates/Note structure templates/Book review template.md",
   "serviceProvider": "google",
   "naverClientId": "",
   "naverClientSecret": "",
@@ -16,5 +16,5 @@
   "enableCoverImageSave": false,
   "enableCoverImageEdgeCurl": true,
   "coverImagePath": "",
-  "askForLocale": false
+  "askForLocale": true
 }

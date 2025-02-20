@@ -15,7 +15,7 @@ cover:
 type:
   - datascope
 area: 
-description: podcast_channel, film, YouTube, series (not books)
+summary: 
 ---
 
 ```dataview
