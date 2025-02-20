@@ -35,6 +35,6 @@
   ],
   "defaultViewMode": "source",
   "mobilePullAction": "command-palette:open",
-  "readableLineLength": false,
+  "readableLineLength": true,
   "strictLineBreaks": false
 }
