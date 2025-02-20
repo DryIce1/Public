@@ -6,20 +6,7 @@ publish: false
 tags:
   - atlas/core
 ---
-%% ## Random quote
-```dataviewjs
-const quote = JSON.parse(await
-request("https://api.quotable.io/random"));
-dv.span(`> "${quote.content}" \n> <div style="text-align:end;
-color:var(--text-gray);
-font-weight: 600; font-size:90%;">-
-${quote.author}</div>`);
-```
- %%
  
- ###  new ideas 
- 
-
 ## Random 30 Notes Box
 ```dataviewjs
 const numberToShow = 4;

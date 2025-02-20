@@ -1,11 +1,11 @@
 {
   "accentColor": "#a38105",
   "enabledCssSnippets": [
-    "accent theme snippet",
     "Alternative checkboxes - styling and icons (Things theme)",
     "Dracula Gemini - indented-hanging headers",
     "Line threading CSS snippet",
     "Minimal cards view",
+    "accent theme snippet",
     "MCL Multi Column"
   ],
   "theme": "obsidian",

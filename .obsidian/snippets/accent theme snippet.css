@@ -426,11 +426,11 @@ img
   .callout-content {}
 
 /* 2) Metadata-based Positioning (from SIRVB floating callouts) */
-  :not(.is-live-preview) .callout:is([data-callout-metadata~="p+l"], [data-callout-metadata~="left"]) {
+  :not(.is-live-preview) .callout:is([data-callout-metadata~="p+l"], [data-callout-metadata~="p+left"]) {
     float: left;
     margin-right: 8px;
   }
-  :not(.is-live-preview) .callout:is([data-callout-metadata~="p+r"], [data-callout-metadata~="right"]) {
+  :not(.is-live-preview) .callout:is([data-callout-metadata~="p+r"], [data-callout-metadata~="p+right"]) {
     float: right;
     margin-left: 8px;
   }
@@ -468,7 +468,8 @@ img
     text-align: center;
   }
 
-  /* Additional float variations: metadata keys “r”, “c”, “cmin” */
+  /* Additional variations: metadata keys “r”, “c”, “cmin” */
+    /* "r" is good for sticking something to the right */
   .callout[data-callout-metadata="r"] {
     max-width: fit-content;
     position: sticky;
@@ -505,15 +506,15 @@ img
     text-align: center;
   }
   .button-callout .callout.is-collapsed {
-    max-width: 90% !important;
-    margin: auto !important;
+    max-width: min(75%, 500px);
+    margin: auto;
   }
   .button-callout .markdown-source-view.mod-cm6 .cm-editor .callout {
     margin: auto !important;
   }
   .button-callout :is(.internal-embed .markdown-embed-content) .callout {
-    margin: auto !important ;
-    max-width: 100% !important;
+    margin: auto  ;
+    max-width: 100% ;
   }
 
 /* 5) Other-Callout-Type Definitions
@@ -576,6 +577,8 @@ img
     .callout[data-callout="transparent"] .callout-title-inner {
       font-size: larger;
     }
+
+  /* Mentions call out */
 
   /* “image-description” callout */
     .callout[data-callout="image-description"] {
