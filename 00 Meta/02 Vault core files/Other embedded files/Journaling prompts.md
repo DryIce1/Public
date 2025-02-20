@@ -4,8 +4,9 @@ related:
 aliases: 
 date-created: 2023-01-01
 publish: true
-tags: my/reflections
-banner: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+tags:
+  - my/reflections
+banner: 
 content-start: 0
 ---
 > [!NOTE]- Gratitude
