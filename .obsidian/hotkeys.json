@@ -1751,5 +1751,29 @@
       ],
       "key": "U"
     }
+  ],
+  "obsidian-hotkeys-for-specific-files:00 Meta/02 Vault core files/Tasks.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "obsidian-hotkeys-for-specific-files:00 Meta/02 Vault core files/Home.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "H"
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "K"
+    }
   ]
 }
