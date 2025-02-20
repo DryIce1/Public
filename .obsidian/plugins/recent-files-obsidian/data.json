@@ -1,28 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "accent-vault-file-updates-log",
-      "path": "00 Meta/01 Guidance/accent-vault-file-updates-log.md"
-    },
-    {
-      "basename": "01 Guidance (folder note)",
-      "path": "00 Meta/01 Guidance/01 Guidance (folder note).md"
-    },
-    {
-      "basename": "03 Datascopes (folder note)",
-      "path": "00 Meta/03 Datascopes/03 Datascopes (folder note).md"
+      "basename": "Home",
+      "path": "00 Meta/02 Vault core files/Home.md"
     },
     {
       "basename": "Tasks",
       "path": "00 Meta/02 Vault core files/Tasks.md"
     },
     {
-      "basename": "Birthdays - datascope",
-      "path": "00 Meta/03 Datascopes/Birthdays - datascope.md"
-    },
-    {
-      "basename": "Books - datascope",
-      "path": "00 Meta/03 Datascopes/Books - datascope.md"
+      "basename": "03 Datascopes (folder note)",
+      "path": "00 Meta/03 Datascopes/03 Datascopes (folder note).md"
     },
     {
       "basename": "Contacts - datascope",
@@ -33,44 +21,80 @@
       "path": "00 Meta/03 Datascopes/Daily note banners - datascope.md"
     },
     {
-      "basename": "Dream diary - datascope",
-      "path": "00 Meta/03 Datascopes/Dream diary - datascope.md"
+      "basename": "Doing the work (DTW) self inquiry - datascope",
+      "path": "00 Meta/03 Datascopes/Doing the work (DTW) self inquiry - datascope.md"
     },
     {
       "basename": "Emotion tracker - datascope",
       "path": "00 Meta/03 Datascopes/Emotion tracker - datascope.md"
     },
     {
-      "basename": "Journal insights - datascope",
-      "path": "00 Meta/03 Datascopes/Journal insights - datascope.md"
+      "basename": "Hotkeys dataview",
+      "path": "00 Meta/03 Datascopes/Hotkeys dataview.md"
     },
     {
       "basename": "Media channels - datascope",
       "path": "00 Meta/03 Datascopes/Media channels - datascope.md"
     },
     {
-      "basename": "Meta bind - datascope",
-      "path": "00 Meta/03 Datascopes/Meta bind - datascope.md"
+      "basename": "Most linked notes",
+      "path": "00 Meta/03 Datascopes/Most linked notes.md"
     },
     {
       "basename": "My themes in reflection",
       "path": "00 Meta/03 Datascopes/My themes in reflection.md"
     },
     {
+      "basename": "Notes created in the past 2 days",
+      "path": "00 Meta/03 Datascopes/Notes created in the past 2 days.md"
+    },
+    {
+      "basename": "Notes modified in the past 2 days",
+      "path": "00 Meta/03 Datascopes/Notes modified in the past 2 days.md"
+    },
+    {
       "basename": "Obsidian hotkeys - datascope",
       "path": "00 Meta/03 Datascopes/Obsidian hotkeys - datascope.md"
+    },
+    {
+      "basename": "Orphaned notes - datascope",
+      "path": "00 Meta/03 Datascopes/Orphaned notes - datascope.md"
     },
     {
       "basename": "Recipes - datascope",
       "path": "00 Meta/03 Datascopes/Recipes - datascope.md"
     },
     {
+      "basename": "Unanswered questions - datascope",
+      "path": "00 Meta/03 Datascopes/Unanswered questions - datascope.md"
+    },
+    {
       "basename": "World events today - datascope",
       "path": "00 Meta/03 Datascopes/World events today - datascope.md"
     },
     {
-      "basename": "Home",
-      "path": "00 Meta/02 Vault core files/Home.md"
+      "basename": "accent-vault-file-updates-log",
+      "path": "00 Meta/01 Guidance/accent-vault-file-updates-log.md"
+    },
+    {
+      "basename": "01 Guidance (folder note)",
+      "path": "00 Meta/01 Guidance/01 Guidance (folder note).md"
+    },
+    {
+      "basename": "Birthdays - datascope",
+      "path": "00 Meta/03 Datascopes/Birthdays - datascope.md"
+    },
+    {
+      "basename": "Books - datascope",
+      "path": "00 Meta/03 Datascopes/Books - datascope.md"
+    },
+    {
+      "basename": "Dream diary - datascope",
+      "path": "00 Meta/03 Datascopes/Dream diary - datascope.md"
+    },
+    {
+      "basename": "Meta bind - datascope",
+      "path": "00 Meta/03 Datascopes/Meta bind - datascope.md"
     },
     {
       "basename": "README",
@@ -101,40 +125,12 @@
       "path": "10 Sources/Great Expectations (Charles Dickens) - Book.md"
     },
     {
-      "basename": "Unanswered questions - datascope",
-      "path": "00 Meta/03 Datascopes/Unanswered questions - datascope.md"
-    },
-    {
       "basename": "2025-02-20",
       "path": "20 My/21 Journal/2025/2025-02-20.md"
     },
     {
       "basename": "Templates database - datascope",
       "path": "00 Meta/03 Datascopes/Templates database - datascope.md"
-    },
-    {
-      "basename": "Orphaned notes - datascope",
-      "path": "00 Meta/03 Datascopes/Orphaned notes - datascope.md"
-    },
-    {
-      "basename": "Notes modified in the past 2 days",
-      "path": "00 Meta/03 Datascopes/Notes modified in the past 2 days.md"
-    },
-    {
-      "basename": "Notes created in the past 2 days",
-      "path": "00 Meta/03 Datascopes/Notes created in the past 2 days.md"
-    },
-    {
-      "basename": "Most linked notes",
-      "path": "00 Meta/03 Datascopes/Most linked notes.md"
-    },
-    {
-      "basename": "Hotkeys dataview",
-      "path": "00 Meta/03 Datascopes/Hotkeys dataview.md"
-    },
-    {
-      "basename": "Doing the work (DTW) self inquiry - datascope",
-      "path": "00 Meta/03 Datascopes/Doing the work (DTW) self inquiry - datascope.md"
     },
     {
       "basename": "Useful Places",
@@ -175,10 +171,6 @@
     {
       "basename": "Obsidian vault development, log and roadmap",
       "path": "00 Meta/01 Guidance/Obsidian vault development, log and roadmap.md"
-    },
-    {
-      "basename": "Journaling prompts",
-      "path": "00 Meta/01 Guidance/Journaling prompts.md"
     },
     {
       "basename": "testing",
